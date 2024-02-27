@@ -38,7 +38,6 @@ def show_metrics(donations_total):
     col1.metric("Days", (end_date - starting_date).days, "1", delta_color="normal")
     col2.metric("Donations", etl.format_money_USD(donations_total.Amount.sum()), donations_yesterday, delta_color="normal")
 
-
 show_metrics(donations_total)
 
 

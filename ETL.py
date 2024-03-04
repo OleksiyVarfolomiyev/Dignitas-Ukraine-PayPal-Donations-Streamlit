@@ -66,7 +66,7 @@ def ETL_raw_data(nrows = None):
     df['Category'].fillna('', inplace=True)
     df['Country'].fillna('', inplace=True)
     df['Category'] = df['Category'].replace('100 Drones for Ukraine', '1000 Drones for Ukraine')
-
+    df['Category'] = df['Category'].replace('Milan', '1000 Drones for Ukraine')
 
     donations_total_by_category = df.groupby(['Date', 'Category']).sum().reset_index()
     donations_total_by_category.to_csv('data/donations_total_by_category.csv', index=False)

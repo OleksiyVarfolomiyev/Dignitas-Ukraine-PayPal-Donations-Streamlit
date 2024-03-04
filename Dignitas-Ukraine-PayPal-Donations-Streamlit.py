@@ -13,7 +13,7 @@ import plotly.figure_factory as ff
 import plotly.io as pio
 from plotly.subplots import make_subplots
 
-# run once to ELT data, then comment and run the app
+# ! run once to ELT data, then comment out and run the app
 #etl.ETL_raw_data()
 
 # app code

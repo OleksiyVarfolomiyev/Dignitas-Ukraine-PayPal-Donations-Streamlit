@@ -1224,7 +1224,7 @@ Date,Category,FullName,Email,Country,State,City,Currency,Amount
 2023-11-29 11:15:08+00:00,General,Mikhail Pereiaslavski,mpereiaslavski@gmail.com,AU,0,Homebush West,USD,99.38
 2023-11-29 12:01:23+00:00,Victory Drones,Ganna Ievtushenko,ann.yevtushenko@gmail.com,NL,0,Zwaag,USD,47.76
 2023-11-29 14:27:09+00:00,,0,0,,0,0,EURUSD,98.88
-2023-11-29 14:27:29+00:00,,0,0,,0,0,GBPUSD,111.44
+2023-11-29 14:27:29+00:00,,0,0,,0,0,USDGBP,111.44
 2023-11-29 16:06:43+00:00,1000 Drones for Ukraine,Roman Kmyta,kmyta.rom@gmail.com,UA,0,Velyki Mosty,USD,157.55
 2023-11-29 16:16:42+00:00,1000 Drones for Ukraine,Igor Bogdanov,biand@ukr.net,DE,0,Dresden,USD,47.76
 2023-11-30 00:28:59+00:00,General,Lesya Kalynska,l.kalynska@gmail.com,US,NY,Maspeth,USD,53.42
@@ -1860,7 +1860,7 @@ Date,Category,FullName,Email,Country,State,City,Currency,Amount
 2024-02-26 12:16:23+00:00,General,Dario Joyeusaz,dariojoy@tiscali.it,IT,0,Chatillon,USD,75.81
 2024-02-26 18:16:16+00:00,1000 Drones for Ukraine,Hanna Pryshlyak,hannapryshlyak@gmail.com,,0,0,USD,96.02
 2024-02-26 19:14:15+00:00,1000 Drones for Ukraine,Antonio Mezzanotte,mezzanotte75@gmail.com,,0,0,USD,96.02
-2024-02-26 21:59:46+00:00,,0,0,,0,0,EURUSD,395.65
+2024-02-26 21:59:46+00:00,,0,0,,0,0,USDEUR,395.65
 2024-02-26 23:53:41+00:00,General,Lidiia Ionka,lvivstudy@gmail.com,US,NY,New York,USD,0.49
 2024-02-27 00:44:56+00:00,1000 Drones for Ukraine,Giacomo Zavatteri,giacomozavatteri@libero.it,,0,0,USD,4.34
 2024-02-27 01:49:00+00:00,General,OREST WALCHUK,OWALCHUK@COMCAST.NET,US,NJ,Pittstown,USD,146.52
@@ -1960,23 +1960,46 @@ Date,Category,FullName,Email,Country,State,City,Currency,Amount
 2024-03-08 23:15:05+00:00,1000 Drones for Ukraine,Marina Stasenko,marina.stasenko@gmail.com,US,NY,Brooklyn,USD,97.52
 2024-03-08 23:25:04+00:00,1000 Drones for Ukraine,Gregory Lewis,gclewis@tl-com.com,US,MI,Northville,USD,97.52
 2024-03-08 23:42:52+00:00,1000 Drones for Ukraine,Andreas Hölzl,ahoelzl23@googlemail.com,DE,0,München,USD,98.46
-2024-03-09 00:11:45+00:00,1000 Drones for Ukraine,WILLIAM ELLERS,wcellers@ncsu.edu,US,NC,Morehead City,USD,200.0
-2024-03-09 01:15:57+00:00,1000 Drones for Ukraine,SVITLANA KRASYNSKA,svitlanak@gmail.com,US,CA,Del Mar,USD,97.52
-2024-03-09 01:29:54+00:00,1000 Drones for Ukraine,Ronald Siroky,rjsiroky@aol.com,US,CA,San Diego,USD,100.0
-2024-03-09 02:13:45+00:00,1000 Drones for Ukraine,Tatyana Peng,klimova.tanya@gmail.com,US,NJ,West Windsor,USD,200.0
-2024-03-09 03:46:48+00:00,1000 Drones for Ukraine,Iurii Motornyi,iurii.moto@gmail.com,CA,QC,Montréal,USD,9.84
-2024-03-09 06:12:56+00:00,Victory Drones,Juri Lebed,Juri_Lebed@yahoo.de,DE,0,Brieselang,USD,54.15
-2024-03-09 07:36:00+00:00,General,Oksana Tovstolytkina,charivna.ksyusha@gmail.com,FR,0,Paris,USD,19.69
-2024-03-09 07:47:40+00:00,General,Lonneke Kroes,lonneke.kroes@gmail.com,NL,0,Utrecht,USD,49.23
-2024-03-09 08:00:29+00:00,1000 Drones for Ukraine,markus becker,mbe113@gmail.com,LI,0,Schaan,USD,196.93
-2024-03-09 09:22:30+00:00,General,Clinton Lieser,lieserc@hotmail.com,US,OR,Prineville,USD,50.0
-2024-03-09 09:44:30+00:00,1000 Drones for Ukraine,Mariya Donska,donskaest@gmail.com,AT,0,Graz,USD,24.610000000000003
-2024-03-09 10:26:50+00:00,1000 Drones for Ukraine,Axel Klug,axel.klug@klughome.de,DE,0,Heikendorf,USD,19.69
-2024-03-09 10:54:47+00:00,General,Nataliia Hornich,nataliia.gornich@gmail.com,US,FL,Indialantic,USD,100.0
-2024-03-09 12:41:01+00:00,General,Oleksandra Datsyk,hrhp.oleks@gmail.com,US,FL,Bonita Springs,USD,100.0
-2024-03-09 12:58:02+00:00,General,Igor Rubets,igor.rubets@gmail.com,CA,QC,N.D.I.P,USD,492.34
-2024-03-09 14:14:31+00:00,Flight to Recovery,ALESSIO POZZI,apepozzi3@gmail.com,IT,0,Pregnana Milanese,USD,4.91
-2024-03-09 14:23:08+00:00,General,Lidiia Ionka,lvivstudy@gmail.com,US,NY,New York,USD,4.41
-2024-03-09 15:17:53+00:00,General,Andriy Boyko,domboyko@gmail.com,US,MA,Melrose,USD,50.0
-2024-03-09 15:42:57+00:00,Victory Drones,Richard Hesselbacher,idahopix@gmail.com,US,ID,Hailey,USD,25.0
-2024-03-09 21:11:04+00:00,1000 Drones for Ukraine,Massimiliano Grandi,massimiliano.grandi@usa.net,GB,0,Doncaster,USD,196.93
+2024-03-09 01:16:23+00:00,1000 Drones for Ukraine,Igor Tumasov,airtuma@gmail.com,US,NY,New York,USD,25.0
+2024-03-10 03:42:34+00:00,1000 Drones for Ukraine,Eric Browne,lucky_1_08@yahoo.com,US,TN,Ooltewah,USD,200.0
+2024-03-10 08:21:50+00:00,1000 Drones for Ukraine,Irina Dragoi,irinadragoi@ymail.com,,0,0,USD,23.64
+2024-03-10 09:09:43+00:00,,Roberta Prato Previde,roberta.pratoprevide@icloud.com,,0,0,USD,104.8
+2024-03-10 10:00:39+00:00,General,Khrystyna Chelak,khrystyna.chelak@gmail.com,GB,0,Reading,USD,147.70000000000002
+2024-03-10 10:42:31+00:00,General,Sofiia Nakonechna,nakonechnasonya@gmail.com,DE,0,Marburg,USD,29.81
+2024-03-10 11:45:47+00:00,General,FetchRSS,contact@fetchrss.com,EE,0,Mykolaiv,USD,98.46
+2024-03-10 14:58:32+00:00,1000 Drones for Ukraine,Andrea Luisi,luisiandrea.02@gmail.com,,0,0,USD,40.04
+2024-03-10 17:42:54+00:00,1000 Drones for Ukraine,arianne mijnlieff,ariannemijnlieff@gmail.com,IT,0,Roma,USD,23.64
+2024-03-10 22:30:54+00:00,Victory Drones,Albert Jeroen Trotz,basekern@protonmail.com,NL,0,Schoorl,USD,984.68
+2024-03-11 04:05:04+00:00,General,Ostap Korostynakyy,korostynskyyyo@gmail.com,US,NY,Ridgewood,USD,2449.76
+2024-03-11 04:10:45+00:00,General,Andriana Matviyishyn,andriana.matviyishyn@gmail.com,US,NJ,Jersey City,USD,2449.76
+2024-03-11 10:12:52+00:00,General,Nataliia Olesiv,danfordcarmen@gmail.com,IT,0,Durham ,USD,18.81
+2024-03-11 10:29:29+00:00,General,ShippingLine.org,svd2000@gmail.com,MX,0,Guadalajara,USD,4.960000000000001
+2024-03-11 10:34:27+00:00,General,Kateryna Podkalenko,kateryna.podkalenko@gmail.com,BE,0,Antwerp ,USD,96.02
+2024-03-11 11:14:13+00:00,General,Viktoriia Sholkova,wendish.de@gmail.com,DE,0,Berlin,USD,23.64
+2024-03-11 11:31:08+00:00,General,Denis Bulgak,bulgakden@gmail.com,FI,0,Pälkäne,USD,47.76
+2024-03-11 11:38:21+00:00,General,maryna karabynosh,marinatravel007@yahoo.com,US,NY,Brooklyn,USD,100.93
+2024-03-11 13:38:34+00:00,1000 Drones for Ukraine,Anne Essenhigh,anniabynia@gmail.com,US,NY,New York,USD,300.0
+2024-03-12 04:31:16+00:00,1000 Drones for Ukraine,Liubov Uzik,liubov.uzik@gmail.com,US,WA,Bothell,USD,20.0
+2024-03-12 07:57:05+00:00,1000 Drones for Ukraine,Yevgeniya Afanasenko,eugeniuccia@gmail.com,GB,0,London,USD,96.02
+2024-03-12 11:40:59+00:00,General,Lyudmyla Korchevska,ludmilakorchevska@gmail.com,US,VA,Arlington,USD,50.47
+2024-03-12 16:44:22+00:00,1000 Drones for Ukraine,andrey mykich,ammykich@yahoo.com,US,PA,Jenkintown,USD,100.0
+2024-03-13 01:01:19+00:00,General,Fran Jones,celloalto@gmail.com,,0,0,USD,984.68
+2024-03-13 02:00:16+00:00,1000 Drones for Ukraine,Ihor Marushchak,ihor.marushchak@gmail.com,US,NY,New York,USD,979.61
+2024-03-13 10:24:38+00:00,General,Ed Shacklee,eshacklee@earthlink.net,US,DC,Washington,USD,25.24
+2024-03-13 10:48:47+00:00,General,polina istomina,polina.istomina@gmail.com,GB,0,London,USD,47.76
+2024-03-13 10:54:00+00:00,General,Kseniia Dmytriieva,kv.dmitrieva@gmail.com,US,MA,Ashland ,USD,50.47
+2024-03-13 18:17:31+00:00,General,Stephane HEMAR,stephane.hemar@laposte.net,FR,0,Saint-Cyr/Mer,USD,47.76
+2024-03-13 22:11:27+00:00,General,Igor Bogdanov,biand@ukr.net,DE,0,Dresden,USD,33.29
+2024-03-13 22:59:35+00:00,General,Lidiia Ionka,lvivstudy@gmail.com,US,NY,New York,USD,4.41
+2024-03-14 05:56:13+00:00,Victory Drones,Martin Paff,martin.paff@hoergold.de,DE,0,Berlin,USD,47.76
+2024-03-14 09:58:41+00:00,General,Ryan S.Q. van der Vlies,rsqvdv@gmail.com,NL,0,Rotterdam,USD,4.91
+2024-03-14 10:37:14+00:00,Victory Drones,Kostiantyn Stankevych,kostya.stankevych@me.com,US,WA,Everett,USD,350.0
+2024-03-14 11:29:44+00:00,General,timothy barnett,timbar@hotmail.co.uk,GB,0,Connahs Quay,USD,9.16
+2024-03-14 13:32:33+00:00,General,Lidiia Ionka,lvivstudy@gmail.com,US,NY,New York,USD,1.47
+2024-03-14 15:07:39+00:00,General,mariano zacsek,ushark140@yahoo.com,CA,BC,Whistler,USD,48.25
+2024-03-14 15:23:29+00:00,Victory Drones,Eric Wanecque,ericwanecque@yahoo.fr,FR,0,Draveil,USD,28.46
+2024-03-14 19:27:41+00:00,Victory Drones,Dmytro Karamshuk,karamshuk@gmail.com,GB,0,Torquay,USD,96.02
+2024-03-14 19:34:37+00:00,Victory Drones,William Welsh,will_welsh@yahoo.co.uk,GB,0,Blairhall,USD,14.760000000000002
+2024-03-14 20:32:21+00:00,General,Olga Figman,olgafg@hotmail.com,US,IL,Wilmette,USD,250.0
+2024-03-14 21:56:05+00:00,Victory Drones,RailBandit LLC,intheswim@gmail.com,US,CA,Redlands,USD,24.01
+2024-03-15 21:25:01+00:00,1000 Drones for Ukraine,W Jefferson Holt,jeffersonholt@me.com,US,NC,Carrboro,USD,100.0

@@ -255,7 +255,7 @@ Date,FullName,Email,Country,State,City,Currency,Amount
 2023-06-26 12:09:33+00:00,Inna Hohosha,innahohosha@gmail.com,US,PA,Pittsburgh,USD,20.0
 2023-06-26 12:38:36+00:00,Galina Kravchenko,galinakravchenko@rogers.com,CA,ON,Toronto,USD,98.45
 2023-06-26 13:45:29+00:00,Roksolana Kozevych,roksolana.kozevych@gmail.com,UA,0,Lviv,USD,95.12
-2023-06-26 16:36:22+00:00,0,0,,0,0,USDGBP,106.5
+2023-06-26 16:36:22+00:00,0,0,,0,0,GBPUSD,106.5
 2023-06-26 16:52:57+00:00,Oksana Bashuk,96bombom@gmail.com,UA,0,Kyiv,USD,9.07
 2023-06-26 17:45:06+00:00,Alla Žuravljova,alazur@email.cz,CZ,0,Praha 5,USD,14.76
 2023-06-26 18:15:10+00:00,Mariia Gubareva,thornym@gmail.com,US,NJ,Hoboken,USD,300.0
@@ -1243,7 +1243,7 @@ Date,FullName,Email,Country,State,City,Currency,Amount
 2023-11-29 12:01:23+00:00,Ganna Ievtushenko,ann.yevtushenko@gmail.com,NL,0,Zwaag,USD,47.76
 2023-11-29 12:44:13+00:00,0,0,,0,0,USD,17500.0
 2023-11-29 14:27:09+00:00,0,0,,0,0,EURUSD,98.88
-2023-11-29 14:27:29+00:00,0,0,,0,0,USDGBP,111.44
+2023-11-29 14:27:29+00:00,0,0,,0,0,GBPUSD,111.44
 2023-11-29 16:06:43+00:00,Roman Kmyta,kmyta.rom@gmail.com,UA,0,Velyki Mosty,USD,157.55
 2023-11-29 16:16:42+00:00,Igor Bogdanov,biand@ukr.net,DE,0,Dresden,USD,47.76
 2023-11-30 00:28:59+00:00,Lesya Kalynska,l.kalynska@gmail.com,US,NY,Maspeth,USD,53.42
@@ -1888,7 +1888,7 @@ Date,FullName,Email,Country,State,City,Currency,Amount
 2024-02-26 12:16:23+00:00,Dario Joyeusaz,dariojoy@tiscali.it,IT,0,Chatillon,USD,75.81
 2024-02-26 18:16:16+00:00,Hanna Pryshlyak,hannapryshlyak@gmail.com,,0,0,USD,96.02
 2024-02-26 19:14:15+00:00,Antonio Mezzanotte,mezzanotte75@gmail.com,,0,0,USD,96.02
-2024-02-26 21:59:46+00:00,0,0,,0,0,USDEUR,395.65
+2024-02-26 21:59:46+00:00,0,0,,0,0,EURUSD,395.65
 2024-02-26 22:00:16+00:00,0,0,,0,0,USD,23500.0
 2024-02-26 23:53:41+00:00,Lidiia Ionka,lvivstudy@gmail.com,US,NY,New York,USD,0.49
 2024-02-27 00:44:56+00:00,Giacomo Zavatteri,giacomozavatteri@libero.it,,0,0,USD,4.34
@@ -2032,3 +2032,39 @@ Date,FullName,Email,Country,State,City,Currency,Amount
 2024-03-14 20:32:21+00:00,Olga Figman,olgafg@hotmail.com,US,IL,Wilmette,USD,250.0
 2024-03-14 21:56:05+00:00,RailBandit LLC,intheswim@gmail.com,US,CA,Redlands,USD,24.01
 2024-03-15 21:25:01+00:00,W Jefferson Holt,jeffersonholt@me.com,US,NC,Carrboro,USD,100.0
+2024-03-15 23:21:42+00:00,Alina Retman,retmanalina@gmail.com,ES,0,Candelaria,USD,96.02
+2024-03-16 10:01:44+00:00,Sven Ruuvet,sven.rufi@gmail.com,,0,0,USD,20.95
+2024-03-16 10:25:36+00:00,Inna Suima,suimafsp@gmail.com,PL,0,Kępno,USD,96.02
+2024-03-16 11:37:10+00:00,Ihor Mudryy,ihor.mudryy@gmail.com,DE,0,Berlin,USD,99.38
+2024-03-16 20:03:42+00:00,Lidiia Ionka,lvivstudy@gmail.com,US,NY,New York,USD,1.47
+2024-03-16 20:53:48+00:00,Oleksandr Fesak,alex_f.ms@outlook.com,SE,0,Stockholm,USD,96.02
+2024-03-17 00:50:54+00:00,Dmytro Kulakovskyi,heulwolf@gmail.com,US,VA,Springfield,USD,979.61
+2024-03-17 02:09:32+00:00,Iconic Wine Tours,peterbowers@me.com,US,CA,Napa,USD,50.0
+2024-03-17 10:17:27+00:00,Chris Purkiss,chrispurkiss2@gmail.com,GB,0,Croydon,USD,49.22
+2024-03-17 10:27:47+00:00,Sven Ruuvet,sven.rufi@gmail.com,EE,0,Pärnumaa,USD,47.76
+2024-03-17 10:35:55+00:00,Natalia Zharkova,natsku008@gmail.com,GB,0,Edinburgh,USD,2.97
+2024-03-17 11:05:23+00:00,paolo pontarollo,paolo.mp@tiscali.it,,0,0,USD,9.16
+2024-03-17 13:42:34+00:00,Federico  Catalano,federicocatalano95@gmail.com,,0,0,USD,23.64
+2024-03-17 14:45:37+00:00,Lidiia Ionka,lvivstudy@gmail.com,US,NY,New York,USD,1.47
+2024-03-17 23:25:54+00:00,Stanislav Demohko,sdemochko@yahoo.com,US,PA,Lake Ariel,USD,97.52
+2024-03-18 08:30:58+00:00,Julian Lang,lang-julian@t-online.de,,0,0,USD,49.23
+2024-03-18 10:32:50+00:00,Lidiia Ionka,lvivstudy@gmail.com,US,NY,New York,USD,0.49
+2024-03-18 11:17:55+00:00,Olga D‘Attoma,olgadattoma@gmail.com,DE,0,Hamburg,USD,47.76
+2024-03-18 11:24:45+00:00,Olexiy Shestakov,olexiys@hotmail.com,US,FL,Palm Harbor,USD,48.51
+2024-03-18 13:23:21+00:00,Nikolay Mikhalchuk,nikomikhal@gmail.com,US,NY,Brooklyn,USD,100.0
+2024-03-18 16:12:52+00:00,Olga Liskovych,olgaliskovych@gmail.com,CA,ON,Mississauga,USD,196.93
+2024-03-18 20:04:49+00:00,Nadia Poluha,nadia-e-p@outlook.com,CA,0,Montreal,USD,337.29
+2024-03-18 20:28:48+00:00,pierettore tredici,pierotredici@yahoo.it,,0,0,USD,240.78
+2024-03-19 10:17:52+00:00,Valentyna Rekkonen,rekkavala2023@gmail.com,GB,0,Farnham,USD,9.93
+2024-03-19 10:56:00+00:00,Vladyslava Poltavtseva,vlada1926@gmail.com,PL,0,Poznań,USD,19.87
+2024-03-20 10:22:12+00:00,Michael Levin,mblevin88@gmail.com,US,NJ,Short Hills,USD,70.08
+2024-03-20 10:33:32+00:00,Platon Danylov,platondanilov@gmail.com,UA,0,Kovalyn,USD,9.16
+2024-03-20 15:28:52+00:00,Yurii Pavlovskyi,yurii.pavlovskyi+paypal@gmail.com,DE,0,Magdeburg,USD,49.23
+2024-03-20 22:22:55+00:00,Lubomyra Petriv,lpetriv@sbcglobal.net,US,IL,Chicago,USD,30.0
+2024-03-21 10:10:17+00:00,Anders Lundberg,anders.lundberg@hotmail.com,SE,0,Årsta,USD,23.63
+2024-03-21 10:21:39+00:00,Olha Boiko,ollhaboiko@gmail.com,PL,0,Krakow,USD,24.84
+2024-03-21 11:15:42+00:00,Lidiia Ionka,lvivstudy@gmail.com,US,NY,New York,USD,1.47
+2024-03-21 11:26:47+00:00,Vira Semenova,semenovavira@gmail.com,US,CA,Berkeley,USD,68.12
+2024-03-21 12:43:26+00:00,Luis Mühlhoff,luis.m.2000@web.de,DE,0,Berlin,USD,18.81
+2024-03-21 13:36:28+00:00,Kateryna Blom,katya696@yahoo.com,NL,0,Weesp,USD,49.23
+2024-03-21 18:09:36+00:00,Daniel Fiumicelli,daniel.fiumicelli@gmail.com,IT,0,Galliate,USD,9.16

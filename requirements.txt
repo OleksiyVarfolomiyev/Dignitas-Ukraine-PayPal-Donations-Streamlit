@@ -4,3 +4,4 @@ streamlit_folium
 streamlit
 datetime
 openpyxl
+boto3

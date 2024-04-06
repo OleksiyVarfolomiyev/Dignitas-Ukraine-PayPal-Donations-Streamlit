@@ -1,8 +1,9 @@
 import streamlit as st; st.set_page_config(layout="wide")
 
-import ETL as etl
+#import ETL as etl
 import data_aggregation_tools as da
 import charting_tools
+import read_PayPal_data_from_AWS as rpd
 
 import pandas as pd
 import datetime as dt
@@ -13,12 +14,8 @@ import plotly.figure_factory as ff
 import plotly.io as pio
 from plotly.subplots import make_subplots
 
-# ! run once to ELT data, then comment out and run the app
-#etl.ETL_raw_data()
-
-# app code
 large_donations_by_category, donations_below_large_by_category, \
-donations_total,  donations_total_by_category = etl.read_clean_data()
+donations_total,  donations_total_by_category = rpd.read_new_PayPal_txs_from_AWS()
 
 st.title("Dignitas Ukraine **PayPal Donations**")
 
@@ -32,11 +29,11 @@ def show_metrics(donations_total):
 
     #donations_today = etl.format_money(donations_total[donations_total['Date'] == donations_total['Date'].max()]['USD'].iloc[0])
     yesterday = donations_total['Date'].max()# - pd.Timedelta(days=1)
-    donations_yesterday = etl.format_money_USD(donations_total[donations_total['Date'] == yesterday]['Amount'].iloc[0])
+    donations_yesterday = rpd.format_money_USD(donations_total[donations_total['Date'] == yesterday]['Amount'].iloc[0])
 
     col1, col2, col3 = st.columns(3)
     col1.metric("Days", (end_date - starting_date).days, "1", delta_color="normal")
-    col2.metric("Donations", etl.format_money_USD(donations_total.Amount.sum()), donations_yesterday, delta_color="normal")
+    col2.metric("Donations", rpd.format_money_USD(donations_total.Amount.sum()), donations_yesterday, delta_color="normal")
 
 show_metrics(donations_total)
 
@@ -154,6 +151,11 @@ def donations_by_period_by_category(donations_total_by_category, large_donations
     st.plotly_chart(fig, use_container_width=True)
 
 donations_by_period_by_category(donations_total_by_category, large_donations_by_category, donations_below_large_by_category)
+
+# Donations list
+# df['Total Cost'] = '$' + df['Total Cost'].astype(str)
+# df.set_index('Date', inplace=True)
+# st.dataframe(df[[ 'Name', 'Product', 'Quantity', 'Total Cost']].sort_values(by= 'Date', ascending=False), use_container_width=True)
 
 
 st.markdown("<br>", unsafe_allow_html=True)

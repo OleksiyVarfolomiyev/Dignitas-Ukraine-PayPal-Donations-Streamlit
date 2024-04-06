@@ -3,13 +3,13 @@ import pandas as pd
 import data_aggregation_tools as da
 import streamlit as st
 
-def format_money(value):
-    if abs(value) >= 1e6:
-        return '{:.2f}M'.format(value / 1e6)
-    elif abs(value) >= 1e3:
-        return '{:.2f}K'.format(value / 1e3)
-    else:
-        return '{:.2f}'.format(value)
+# def format_money(value):
+#     if abs(value) >= 1e6:
+#         return '{:.2f}M'.format(value / 1e6)
+#     elif abs(value) >= 1e3:
+#         return '{:.2f}K'.format(value / 1e3)
+#     else:
+#         return '{:.2f}'.format(value)
 
 def format_money_USD(value):
     if abs(value) >= 1e6:
@@ -19,7 +19,7 @@ def format_money_USD(value):
     else:
         return '${:.2f}'.format(value)
 
-
+@st.cache_data(ttl=24*60*60)
 def read_clean_data():
     """read clean data from csv files"""
     dtypes = {

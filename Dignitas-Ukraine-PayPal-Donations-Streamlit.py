@@ -1,6 +1,5 @@
 import streamlit as st; st.set_page_config(layout="wide")
 
-#import ETL as etl
 import data_aggregation_tools as da
 import charting_tools
 import read_PayPal_data_from_AWS as rpd
@@ -76,7 +75,7 @@ def show_donations_by_category(large_donations_by_category, donations_below_larg
 
     col0, col1, col2, col3 = st.columns(4)
     with col0:
-        over_below_all = st.selectbox(' ',['all txs', 'over $2,666', 'below $2,666'])
+        over_below_all = st.selectbox(' ',['all txs', 'over $2,500', 'below $2,666'])
     with col3:
         period = st.selectbox(' ', ['Year', 'Month', 'Week', 'Day', 'All time'])
 
@@ -94,9 +93,9 @@ def show_donations_by_category(large_donations_by_category, donations_below_larg
         donations = donations_by_category
 
     amount = 2666
-    if over_below_all == 'over $2,666':
+    if over_below_all == 'over $2,500':
         donations = donations[donations.Amount >= amount]
-    elif over_below_all == 'below $2,666':
+    elif over_below_all == 'below $2,500':
         donations = donations[donations.Amount < amount]
 
     # else:
@@ -118,16 +117,16 @@ def donations_by_period_by_category(donations_total_by_category, large_donations
 
     col0, col1, col2 = st.columns(3)
     with col0:
-        amount = st.selectbox(' ',['all txs', '<$2,666', '>$2,666'])
+        amount = st.selectbox(' ',['all txs', '<$2,500', '>$2,500'])
     with col1:
         selected_period = st.selectbox(' ',['Monthly ', 'Weekly ', 'Daily '])
     with col2:
         timespan = st.selectbox(' ',[ 'all time', '1 month', '3 months', '1 Year'])
 
-    if amount == '>$2,666':
+    if amount == '>$2,500':
         donations_by_category = large_donations_by_category
 
-    elif amount == '<$2,666':
+    elif amount == '<$2,500':
         donations_by_category = donations_below_large_by_category
 
     else:

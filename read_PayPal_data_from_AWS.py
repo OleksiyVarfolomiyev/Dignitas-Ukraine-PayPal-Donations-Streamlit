@@ -94,6 +94,8 @@ def etl(df):
     df.loc[mask, 'Category'] = '1000 Drones for Ukraine'
     mask = df['Category'].str.contains('Milan', case=False, na=False)
     df.loc[mask, 'Category'] = '1000 Drones for Ukraine'
+    mask = df['Category'].str.contains('BOSTON', case=False, na=False)
+    df.loc[mask, 'Category'] = '1000 Drones for Ukraine'
     mask = df['Category'].str.contains('support ukraine', case=False, na=False)
     df.loc[mask, 'Category'] = 'General'
     mask = df['Category'].str.contains('victory', case=False, na=False)
@@ -106,6 +108,7 @@ def etl(df):
     df.loc[mask, 'Category'] = 'Mobile Shower Laundry Units'
     mask = df['Category'].str.contains('shower', case=False, na=False)
     df.loc[mask, 'Category'] = 'Mobile Shower Laundry Units'
+
 
     file_path = 'data/PayPal.csv'
 

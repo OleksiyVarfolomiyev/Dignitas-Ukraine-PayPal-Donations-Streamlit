@@ -182,7 +182,7 @@ def ETL_raw_data():
 def read_new_PayPal_txs_from_AWS():
     try:
         df_date = pd.read_csv('data/PayPal.csv', usecols=['Date'], parse_dates=['Date'])
-        start_date = df_date['Date'].max()#.strftime('%Y-%m-%d')
+        start_date = df_date['Date'].max().strftime('%Y-%m-%d')
     except FileNotFoundError:
         start_date = '2023-03-05'
 

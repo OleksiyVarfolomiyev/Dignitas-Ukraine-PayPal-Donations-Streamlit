@@ -1,8 +1,8 @@
 import numpy as np
 import data_aggregation_tools as da
 import read_PayPal_data_from_AWS as etl
+
 import plotly.graph_objects as go
-import data_aggregation_tools as da
 import plotly.express as px
 from plotly.subplots import make_subplots
 
@@ -66,15 +66,22 @@ def subplot_vertical(val, fig1, fig2, rows, cols, type1, type2, barmode, title1,
 
 def pie_plot(data, col, title, show):
     """ pie plot with hole"""
+
     fig = px.pie(data,
             values = data[col],
             names = data.index,
             hole=0.5,
-            title = title)
+            title = title
+    )
+    fig.update_traces(textinfo='label+percent')
+    fig.update_traces(textposition='inside', insidetextorientation='radial')
+    fig.update_layout(showlegend=False)
+
     if show:
         fig.show(renderer="notebook")
     else:
         return fig
+
 
 def bar_plot(val, col, fig_title, show):
     """ bar plot with mean"""

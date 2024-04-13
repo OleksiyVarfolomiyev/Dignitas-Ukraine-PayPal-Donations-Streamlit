@@ -7,49 +7,40 @@ import read_PayPal_data_from_AWS as rpd
 import pandas as pd
 import datetime as dt
 
-import plotly.express as px
-from plotly.offline import iplot
-import plotly.figure_factory as ff
-import plotly.io as pio
-from plotly.subplots import make_subplots
+df, large_donations_by_category, donations_below_large_by_category, \
+donations_total, donations_total_by_category = rpd.read_new_PayPal_txs_from_AWS()
 
-large_donations_by_category, donations_below_large_by_category, \
-donations_total,  donations_total_by_category = rpd.read_new_PayPal_txs_from_AWS()
 
 st.title("Dignitas Ukraine **PayPal Donations**")
 
-def show_metrics(donations_total):
+def show_metrics(donations_total, df):
     """ Show metrics"""
-    #end_date = df['Date'].max()
-    starting_date = donations_total['Date'].min().date()
-    #starting_date = dt.date(2023, 2, 15)
-    end_date = dt.date.today()
-    #dt.date(2023, 10, 31)
+    starting_date = donations_total['Date'].min()
+    end_date = donations_total.Date.max()
 
-    #donations_today = etl.format_money(donations_total[donations_total['Date'] == donations_total['Date'].max()]['USD'].iloc[0])
-    yesterday = donations_total['Date'].max()# - pd.Timedelta(days=1)
-    donations_yesterday = rpd.format_money_USD(donations_total[donations_total['Date'] == yesterday]['Amount'].iloc[0])
+    donations_yesterday = rpd.format_money_USD(donations_total[donations_total['Date'] == end_date]['Amount'].iloc[0])
+    donations_yesterday_count = df[df['Date'].dt.date == end_date].shape[0]
+    donations_total_count = df.shape[0]
 
     col1, col2, col3 = st.columns(3)
     col1.metric("Days", (end_date - starting_date).days, "1", delta_color="normal")
-    col2.metric("Donations", rpd.format_money_USD(donations_total.Amount.sum()), donations_yesterday, delta_color="normal")
+    col2.metric("Donations $", rpd.format_money_USD(donations_total.Amount.sum()), donations_yesterday, delta_color="normal")
+    col3.metric("Donations #", donations_total_count, int(donations_yesterday_count), delta_color="normal")
 
-show_metrics(donations_total)
-
+show_metrics(donations_total, df)
 
 def show_donations(donations_total):
-    """ Show donations and spending by time period"""
+    """ Show donations by time period"""
     col0, col1, col2, col3 = st.columns(4)
     with col0:
         timeperiod = st.selectbox(' ', ['Monthly  ',  'Weekly  ', 'Daily  '])
     with col3:
-        timespan = st.selectbox(' ',['Since launch', '1 Year ', '1 Month ', '3 Months ', '6 Months '])
+        timespan = st.selectbox(' ',['Since launch', '1 Year ', '1 Week', '1 Month ', '3 Months ', '6 Months '])
 
 
     donations = da.sum_by_period(donations_total, timeperiod[0])
-    #if not isinstance(donations.index, pd.core.indexes.period.PeriodIndex):
-    #    donations.index = donations.index.to_period(timeperiod[0])
-
+    if timespan == '1 Week':
+        donations = donations.loc[donations.index > (pd.Timestamp.now() - pd.DateOffset(weeks=1)).strftime("%Y-%m-%d")]
     if timespan == '1 Month ':
         donations = donations.loc[donations.index > (pd.Timestamp.now() - pd.DateOffset(months=1)).strftime("%Y-%m-%d")]
     elif timespan == '3 Months ':
@@ -59,7 +50,6 @@ def show_donations(donations_total):
     elif timespan == '1 Year ':
         donations = donations.loc[donations.index > (pd.Timestamp.now() - pd.DateOffset(years=1)).strftime("%Y")]
 
-    # Convert the Period index back to datetime index
     donations.index = donations.index.to_timestamp()
 
     fig = charting_tools.bar_plot(donations, 'Amount', '', False)
@@ -67,53 +57,48 @@ def show_donations(donations_total):
 
 show_donations(donations_total)
 
-# Ring plot - Donations  by Category
-def show_donations_by_category(large_donations_by_category, donations_below_large_by_category, donations_total_by_category):
-    """ Show donations and spending by category"""
-    donations_by_category = donations_total_by_category
 
+def show_donations_by_category(donations_by_category):
+    """ Show donations by category"""
 
     col0, col1, col2, col3 = st.columns(4)
     with col0:
-        over_below_all = st.selectbox(' ',['all txs', 'over $2,500', 'below $2,666'])
+        over_below_all = st.selectbox(' ',['all txs', 'over $2,500', 'below $2,500'])
     with col3:
         period = st.selectbox(' ', ['Year', 'Month', 'Week', 'Day', 'All time'])
 
-    if period == 'Month':
-        donations = donations_by_category[donations_by_category['Date'] >= pd.Timestamp.now(tz='UTC').floor('D') - pd.DateOffset(months=1)]
 
+    donations_by_category['Date'] = pd.to_datetime(donations_by_category['Date'])
+
+    if period == 'Month':
+        donations = donations_by_category[donations_by_category['Date'] >= pd.to_datetime(pd.Timestamp.now() - pd.DateOffset(months=1))]
     elif period == 'Week':
-        donations = donations_by_category[donations_by_category['Date'] >= pd.Timestamp.now(tz='UTC').floor('D') - pd.DateOffset(weeks=1)]
+        donations = donations_by_category[donations_by_category['Date'] >= pd.to_datetime(pd.Timestamp.now() - pd.DateOffset(weeks=1))]
     elif period == 'Day':
         day = donations_by_category['Date'].max()
         donations = donations_by_category[donations_by_category['Date'] == donations_by_category.Date.max()]
     elif period == 'Year':
-        donations = donations_by_category[donations_by_category['Date'] >= pd.Timestamp.now(tz='UTC').floor('D') - pd.DateOffset(years=1)]
+        donations = donations_by_category[donations_by_category['Date'] >= dt.date.today() - pd.DateOffset(years=1)]
     else:
         donations = donations_by_category
 
-    amount = 2666
+    amount = 2500
     if over_below_all == 'over $2,500':
         donations = donations[donations.Amount >= amount]
     elif over_below_all == 'below $2,500':
         donations = donations[donations.Amount < amount]
 
-    # else:
-    #     donations = donations_total_by_category
-    #     spending = spending_total_by_category
-
     donations_by_cat = pd.DataFrame(donations.groupby('Category')['Amount'].sum())
-
 
     fig = charting_tools.pie_plot(donations_by_cat, 'Amount', '', False)
     st.plotly_chart(fig, use_container_width=True)
 
-show_donations_by_category(large_donations_by_category, donations_below_large_by_category, donations_total_by_category)
+show_donations_by_category(donations_total_by_category)
 
 def donations_by_period_by_category(donations_total_by_category, large_donations_by_category, donations_below_large_by_category):
-    """Donations/Spending by time period (d, w, m) and large/regular amounts"""
-    #main_donation_categories = donations_total_by_category.groupby('Category')['USD'].sum().sort_values(ascending = False).index[:4].tolist()
-    main_donation_categories = donations_total_by_category.groupby('Category')['Amount'].sum().sort_values(ascending=False).index.tolist()
+    """Donations by time period (d, w, m) and large/regular amounts"""
+
+    main_categories = donations_total_by_category.groupby('Category')['Amount'].sum().sort_values(ascending=False).index.tolist()
 
     col0, col1, col2 = st.columns(3)
     with col0:
@@ -123,39 +108,32 @@ def donations_by_period_by_category(donations_total_by_category, large_donations
     with col2:
         timespan = st.selectbox(' ',[ 'all time', '1 month', '3 months', '1 Year'])
 
-    if amount == '>$2,500':
+    if  amount == '>$2,500':
         donations_by_category = large_donations_by_category
-
     elif amount == '<$2,500':
-        donations_by_category = donations_below_large_by_category
-
+         donations_by_category = donations_below_large_by_category
     else:
         donations_by_category = donations_total_by_category
 
-
-    #if donations_spending == 'donations':
-    main_categories = main_donation_categories
     tx_by_category = donations_by_category
-    #else:
-    #    main_categories = main_spending_categories
 
     if timespan == '1 month':
-        tx_by_category = tx_by_category[tx_by_category['Date'] > pd.Timestamp.now(tz='UTC').floor('D') - pd.DateOffset(months=1)]
+        tx_by_category = tx_by_category[tx_by_category['Date'] > pd.Timestamp.now() - pd.DateOffset(months=1)]
     elif timespan == '3 months':
-        tx_by_category = tx_by_category[tx_by_category['Date'] > pd.Timestamp.now(tz='UTC').floor('D') - pd.DateOffset(months=3)]
+        tx_by_category = tx_by_category[tx_by_category['Date'] > pd.Timestamp.now() - pd.DateOffset(months=3)]
     elif timespan == '1 year':
-        tx_by_category = tx_by_category[tx_by_category['Date'] > pd.Timestamp.now(tz='UTC').floor('D') - pd.DateOffset(years=1)]
+        tx_by_category = tx_by_category[tx_by_category['Date'] > pd.Timestamp.now() - pd.DateOffset(years=1)]
 
     fig = charting_tools.chart_by_period(tx_by_category, main_categories, selected_period[0],'')
     st.plotly_chart(fig, use_container_width=True)
 
 donations_by_period_by_category(donations_total_by_category, large_donations_by_category, donations_below_large_by_category)
 
+st.markdown("<br>", unsafe_allow_html=True)
 # Donations list
-# df['Total Cost'] = '$' + df['Total Cost'].astype(str)
-# df.set_index('Date', inplace=True)
-# st.dataframe(df[[ 'Name', 'Product', 'Quantity', 'Total Cost']].sort_values(by= 'Date', ascending=False), use_container_width=True)
-
+df_display = df[[ 'Date', 'First Name', 'City', 'Currency', 'Amount', 'Commentary']].sort_values(by = 'Date', ascending = False)
+df_display.index = df_display.index + 1
+st.dataframe(df_display, use_container_width = True)
 
 st.markdown("<br>", unsafe_allow_html=True)
 # Donate button

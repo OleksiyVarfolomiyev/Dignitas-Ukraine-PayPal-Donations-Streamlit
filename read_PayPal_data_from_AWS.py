@@ -74,17 +74,17 @@ def etl(df):
     '''Extract, transform, and load the new PayPal transactions,
     append to existing data in PayPal.csv'''
 
-    df['FullName'] = df['FullName'].str.split().str[0]
     df['Fee'].fillna(0)
     df = df.fillna('')
     df['Date'] = pd.to_datetime(df['Date'])
     df['Gross'] = df['Gross'].astype(float).abs()
     df['Gross'] = df['Gross'].abs()
     df['Fee'] = pd.to_numeric(df['Fee'], errors='coerce').fillna(0).astype(float)
-    df['Fee'] = df['Fee'].astype(float)
+    #df['Fee'] = df['Fee'].astype(float)
 
     df['Amount'] = df['Gross'] + df['Fee']
     df = df.drop(['Gross', 'Fee'], axis=1)
+
     df['City'] = df['City'].str.title()
     df.loc[df.City == 'Kiev', 'City'] = 'Kyiv'
 
@@ -96,19 +96,22 @@ def etl(df):
     df.loc[mask, 'Category'] = '1000 Drones for Ukraine'
     mask = df['Category'].str.contains('BOSTON', case=False, na=False)
     df.loc[mask, 'Category'] = '1000 Drones for Ukraine'
+
     mask = df['Category'].str.contains('support ukraine', case=False, na=False)
     df.loc[mask, 'Category'] = 'General'
-    mask = df['Category'].str.contains('victory', case=False, na=False)
-    df.loc[mask, 'Category'] = 'Victory Drones'
-    mask = df['Category'].str.contains('flight', case=False, na=False)
-    df.loc[mask, 'Category'] = 'Flight to Recovery'
     mask = df['Category'].str.contains('custom', case=False, na=False)
     df.loc[mask, 'Category'] = 'General'
+
+    mask = df['Category'].str.contains('victory', case=False, na=False)
+    df.loc[mask, 'Category'] = 'Victory Drones'
+
+    mask = df['Category'].str.contains('flight', case=False, na=False)
+    df.loc[mask, 'Category'] = 'Flight to Recovery'
+
     mask = df['Category'].str.contains('units', case=False, na=False)
     df.loc[mask, 'Category'] = 'Mobile Shower Laundry Units'
     mask = df['Category'].str.contains('shower', case=False, na=False)
     df.loc[mask, 'Category'] = 'Mobile Shower Laundry Units'
-
 
     file_path = 'data/PayPal.csv'
 
@@ -135,7 +138,7 @@ def etl(df):
 
 
 @st.cache_data(ttl=24*60*60)
-def ETL_raw_data(nrows = None):
+def ETL_raw_data():
     '''Extract and transform data and save it to csv files'''
 
     dtypes = {
@@ -149,32 +152,43 @@ def ETL_raw_data(nrows = None):
         'Category': 'str'
     }
 
-    df = pd.read_csv('data/PayPal.csv', dtype=dtypes, parse_dates=['Date'])
+    df = pd.read_csv('data/PayPal.csv', dtype = dtypes, parse_dates=['Date'])
 
-    df['Date'] = pd.to_datetime(df['Date'])
-    df['Category'].fillna('', inplace=True)
-    df['Country'].fillna('', inplace=True)
+    df = df.drop_duplicates()
+
+    df.loc[:, 'Category'] = df['Category'].fillna('')
+    df.loc[:, 'Country'] = df['Country'].fillna('')
+
     df['Category'] = df['Category'].replace('100 Drones for Ukraine', '1000 Drones for Ukraine')
     df['Category'] = df['Category'].replace('Milan', '1000 Drones for Ukraine')
+    df['Category'] = df['Category'].replace('BOSTON', '1000 Drones for Ukraine')
+    df['Date'] = df['Date'].dt.strftime('%Y-%m-%d %H:%M')
+    df['Date'] = pd.to_datetime(df['Date'])
 
-    donations_total_by_category = df.groupby(['Date', 'Category']).sum().reset_index()
+    df_original = df.copy()
 
-    donations_total = df.drop('Category', axis=1).groupby('Date').sum().reset_index()
+    donations_total_by_category = df.groupby([df.Date.dt.date, 'Category'])['Amount'].sum().reset_index()
+    donations_total = df.groupby(df.Date.dt.date)['Amount'].sum().reset_index()
 
-
-    # above $2666 (large donations)
-    amount = 2666
+    # above $2500 (large donations)
+    amount = 2500
     large_donations = df[df['Amount'] >= amount].fillna('')
     large_donations_by_category = large_donations.groupby(['Date', 'Category']).sum().reset_index()
 
-
-    # below $2666 (crowdfunding)
+    # below $2500 (crowdfunding)
     donations_below_large_by_category = df[df.Amount < amount]
-
     donations_below_large_by_category = donations_below_large_by_category.groupby(
                                         ['Date', 'Category']).sum().reset_index()
+    df = df_original
+    df['First Name'] = df['FullName'].str.split().str[0]
+    df['First Name'] = df['First Name'].str.capitalize()
+    df = df.rename(columns={'TransactionNote': 'Commentary'})
+    df['City'] = df['City'].fillna('')
+    df['Commentary'] = df['Commentary'].fillna('')
 
-    return large_donations_by_category, donations_below_large_by_category, donations_total, donations_total_by_category
+    return  df[['Date', 'First Name', 'City', 'Currency', 'Amount', 'Commentary']], \
+            large_donations_by_category, donations_below_large_by_category, \
+            donations_total, donations_total_by_category
 
 
 # Main function
@@ -183,9 +197,12 @@ def read_new_PayPal_txs_from_AWS():
         df_date = pd.read_csv('data/PayPal.csv', usecols=['Date'], parse_dates=['Date'])
         start_date = df_date['Date'].max().strftime('%Y-%m-%d')
     except FileNotFoundError:
-        start_date = '2023-03-01'
+        start_date = '2023-03-06'
 
+    yesterday = pd.Timestamp.now().normalize() - pd.DateOffset(days=1)
     start_date = datetime.strptime(start_date, '%Y-%m-%d')
-    df_new = read_PayPal_txs(start_date)
-    etl(df_new)
+    if start_date < yesterday:
+        df_new = read_PayPal_txs(start_date)
+        etl(df_new)
+
     return ETL_raw_data()

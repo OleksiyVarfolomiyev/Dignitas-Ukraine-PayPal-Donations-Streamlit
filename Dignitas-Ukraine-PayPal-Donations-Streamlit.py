@@ -129,11 +129,15 @@ def donations_by_period_by_category(donations_total_by_category, large_donations
 
 donations_by_period_by_category(donations_total_by_category, large_donations_by_category, donations_below_large_by_category)
 
+
 st.markdown("<br>", unsafe_allow_html=True)
 # Donations list
-df_display = df[[ 'Date', 'First Name', 'City', 'Currency', 'Amount', 'Commentary']].sort_values(by = 'Date', ascending = False)
-df_display.index = df_display.index + 1
-st.dataframe(df_display, use_container_width = True)
+#df = df.drop_duplicates()
+if df.index.min() == 0:
+    df.index += 1
+df.sort_index(ascending=False, inplace=True)
+st.dataframe(df, use_container_width = True)
+
 
 st.markdown("<br>", unsafe_allow_html=True)
 # Donate button
@@ -142,6 +146,7 @@ url_to_open = "https://www.dignitas.fund/donate"
 col1, col2, col3 = st.columns(3)
 if col2.button("Donate", key="donate_button", help="Click to donate"):
     webbrowser.open_new_tab(url_to_open)
+
 
 # Links
 st.write("---")

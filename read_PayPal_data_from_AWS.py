@@ -35,7 +35,7 @@ def read_PayPal_txs(start_date):
             obj_date_str = '-'.join(obj['Key'].split('-')[2:5]).split('.')[0]
             obj_date = datetime.strptime(obj_date_str, '%Y-%m-%d')
             # Only process the object if its date is greater than or equal to the specified date
-            if obj_date >= start_date:
+            if obj_date > start_date:
                 file = s3.get_object(Bucket='finmap-trans', Key=obj['Key'])
                 file_content = file['Body'].read().decode('utf-8')
 
@@ -182,9 +182,9 @@ def ETL_raw_data():
 def read_new_PayPal_txs_from_AWS():
     try:
         df_date = pd.read_csv('data/PayPal.csv', usecols=['Date'], parse_dates=['Date'])
-        start_date = df_date['Date'].max().strftime('%Y-%m-%d')
+        start_date = df_date['Date'].max()#.strftime('%Y-%m-%d')
     except FileNotFoundError:
-        start_date = '2023-03-06'
+        start_date = '2023-03-05'
 
     yesterday = pd.Timestamp.now().normalize() - pd.DateOffset(days=1)
     start_date = datetime.strptime(start_date, '%Y-%m-%d')

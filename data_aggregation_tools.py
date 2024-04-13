@@ -16,6 +16,5 @@ def sum_by_period_by_category(categories, period, data, category):
     return reduce(lambda left, right: pd.merge(left, right, on='Date', how='outer'), data_frames)
 
 def sum_by_period(data, period):
-    #return pd.DataFrame(data['Amount'].groupby(data['Date'].dt.to_period(period)).sum())
     data['Date'] = pd.to_datetime(data['Date'])
     return pd.DataFrame(data['Amount'].groupby(data['Date'].dt.to_period(period)).sum())

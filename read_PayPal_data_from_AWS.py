@@ -36,7 +36,6 @@ def read_PayPal_txs(start_date):
             obj_date = datetime.strptime(obj_date_str, '%Y-%m-%d')
             # Only process the object if its date is greater than or equal to the specified date
             if obj_date >= start_date:
-            #if obj['Key'].startswith('trans-paypal'):
                 file = s3.get_object(Bucket='finmap-trans', Key=obj['Key'])
                 file_content = file['Body'].read().decode('utf-8')
 
@@ -55,9 +54,6 @@ def read_PayPal_txs(start_date):
                     transaction_data = {
                         'Date': transaction_info.get('transaction_initiation_date'),
                         'FullName': payer_name.get('alternate_full_name'),
-                        #'Email': payer_info.get('email_address'),
-                        #'Country': address.get('country_code'),
-                        #'State': address.get('state'),
                         'City': address.get('city'),
                         'Currency': transaction_info.get('transaction_amount', {}).get('currency_code'),
                         'Gross': transaction_info.get('transaction_amount', {}).get('value'),
@@ -83,7 +79,6 @@ def etl(df):
     df['Gross'] = df['Gross'].astype(float).abs()
     df['Gross'] = df['Gross'].abs()
     df['Fee'] = pd.to_numeric(df['Fee'], errors='coerce').fillna(0).astype(float)
-    #df['Fee'] = df['Fee'].astype(float)
 
     df['Amount'] = df['Gross'] + df['Fee']
     df = df.drop(['Gross', 'Fee'], axis=1)
@@ -132,11 +127,6 @@ def etl(df):
     df_combined = pd.concat([df_existing, df])
     df_combined['Date'] = pd.to_datetime(df_combined['Date'])
 
-    #df_new = df_combined.drop_duplicates(keep='first')
-
-    #df_new = df_new.sort_values(by=['Date'], ascending=True)
-
-    #df_new.to_csv(file_path, index=False)
     df_combined.to_csv(file_path, index=False)
 
 @st.cache_data(ttl=24*60*60)
@@ -145,9 +135,6 @@ def ETL_raw_data():
 
     dtypes = {
         'FullName': 'str',
-        #'Email': 'str',
-        #'Country': 'str',
-        #'State': 'str',
         'City': 'str',
         'Currency': 'str',
         'Amount': 'float',
@@ -159,7 +146,6 @@ def ETL_raw_data():
     df = df.drop_duplicates()
 
     df.loc[:, 'Category'] = df['Category'].fillna('')
-    #df.loc[:, 'Country'] = df['Country'].fillna('')
 
     df['Category'] = df['Category'].replace('100 Drones for Ukraine', '1000 Drones for Ukraine')
     df['Category'] = df['Category'].replace('Milan', '1000 Drones for Ukraine')

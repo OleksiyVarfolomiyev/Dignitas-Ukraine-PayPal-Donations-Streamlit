@@ -123,18 +123,18 @@ def stack_bar_plot(df, title, show):
         barmode='stack',
         title = title,
         legend=dict(orientation='h', x=0.1, y=-0.1),
-        xaxis=dict(tickformat='%b')
+        xaxis=dict(tickformat='%b'),
     # Add a horizontal line at the mean value
-        # shapes=[
-        #     dict(
-        #         type='line',
-        #         x0=df['Date'].iloc[0],
-        #         x1=df['Date'].iloc[-1],
-        #         y0=mean_value,
-        #         y1=mean_value,
-        #         line=dict(color='blue', dash='dot')
-        #     )
-        # ]
+        shapes=[
+            dict(
+                type='line',
+                x0=df['Date'].iloc[0],
+                x1=df['Date'].iloc[-1],
+                y0=mean_value,
+                y1=mean_value,
+                line=dict(color='blue', dash='dot')
+            )
+        ]
     )
     if show:
         fig.show(renderer="notebook")

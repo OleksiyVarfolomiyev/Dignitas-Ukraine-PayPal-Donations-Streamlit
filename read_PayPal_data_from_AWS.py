@@ -55,9 +55,9 @@ def read_PayPal_txs(start_date):
                     transaction_data = {
                         'Date': transaction_info.get('transaction_initiation_date'),
                         'FullName': payer_name.get('alternate_full_name'),
-                        'Email': payer_info.get('email_address'),
-                        'Country': address.get('country_code'),
-                        'State': address.get('state'),
+                        #'Email': payer_info.get('email_address'),
+                        #'Country': address.get('country_code'),
+                        #'State': address.get('state'),
                         'City': address.get('city'),
                         'Currency': transaction_info.get('transaction_amount', {}).get('currency_code'),
                         'Gross': transaction_info.get('transaction_amount', {}).get('value'),
@@ -74,6 +74,9 @@ def etl(df):
     '''Extract, transform, and load the new PayPal transactions,
     append to existing data in PayPal.csv'''
 
+    # anonimization, store only the first name
+    df['FullName'] = df['FullName'].str.split().str[0]
+    df['FullName'] = df['FullName'].str.capitalize()
     df['Fee'].fillna(0)
     df = df.fillna('')
     df['Date'] = pd.to_datetime(df['Date'])
@@ -127,15 +130,14 @@ def etl(df):
 
     # Append new transactions
     df_combined = pd.concat([df_existing, df])
-
     df_combined['Date'] = pd.to_datetime(df_combined['Date'])
 
-    df_new = df_combined.drop_duplicates(keep='first')
+    #df_new = df_combined.drop_duplicates(keep='first')
 
-    df_new = df_new.sort_values(by=['Date'], ascending=True)
+    #df_new = df_new.sort_values(by=['Date'], ascending=True)
 
-    df_new.to_csv(file_path, index=False)
-
+    #df_new.to_csv(file_path, index=False)
+    df_combined.to_csv(file_path, index=False)
 
 @st.cache_data(ttl=24*60*60)
 def ETL_raw_data():
@@ -143,9 +145,9 @@ def ETL_raw_data():
 
     dtypes = {
         'FullName': 'str',
-        'Email': 'str',
-        'Country': 'str',
-        'State': 'str',
+        #'Email': 'str',
+        #'Country': 'str',
+        #'State': 'str',
         'City': 'str',
         'Currency': 'str',
         'Amount': 'float',
@@ -157,7 +159,7 @@ def ETL_raw_data():
     df = df.drop_duplicates()
 
     df.loc[:, 'Category'] = df['Category'].fillna('')
-    df.loc[:, 'Country'] = df['Country'].fillna('')
+    #df.loc[:, 'Country'] = df['Country'].fillna('')
 
     df['Category'] = df['Category'].replace('100 Drones for Ukraine', '1000 Drones for Ukraine')
     df['Category'] = df['Category'].replace('Milan', '1000 Drones for Ukraine')
@@ -180,8 +182,7 @@ def ETL_raw_data():
     donations_below_large_by_category = donations_below_large_by_category.groupby(
                                         ['Date', 'Category']).sum().reset_index()
     df = df_original
-    df['First Name'] = df['FullName'].str.split().str[0]
-    df['First Name'] = df['First Name'].str.capitalize()
+    df['First Name'] = df['FullName']
     df = df.rename(columns={'TransactionNote': 'Commentary'})
     df['City'] = df['City'].fillna('')
     df['Commentary'] = df['Commentary'].fillna('')

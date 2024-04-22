@@ -11,7 +11,9 @@ df, large_donations_by_category, donations_below_large_by_category, \
 donations_total, donations_total_by_category = rpd.read_new_PayPal_txs_from_AWS()
 
 
-st.title("Dignitas Ukraine **PayPal Donations**")
+#st.title("Dignitas Ukraine **PayPal Donations**")
+st.markdown("<h1 style='text-align: center;'>Dignitas Ukraine <b>Donations</b></h1>", unsafe_allow_html=True)
+
 
 def show_metrics(donations_total, df):
     """ Show metrics"""
@@ -22,10 +24,10 @@ def show_metrics(donations_total, df):
     donations_yesterday_count = df[df['Date'].dt.date == end_date].shape[0]
     donations_total_count = df.shape[0]
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4, col5 = st.columns(5)
     col1.metric("Days", (end_date - starting_date).days, "1", delta_color="normal")
-    col2.metric("Donations $", rpd.format_money_USD(donations_total.Amount.sum()), donations_yesterday, delta_color="normal")
-    col3.metric("Donations #", donations_total_count, int(donations_yesterday_count), delta_color="normal")
+    col3.metric("Donations $", rpd.format_money_USD(donations_total.Amount.sum()), donations_yesterday, delta_color="normal")
+    col5.metric("Donations #", donations_total_count, int(donations_yesterday_count), delta_color="normal")
 
 show_metrics(donations_total, df)
 

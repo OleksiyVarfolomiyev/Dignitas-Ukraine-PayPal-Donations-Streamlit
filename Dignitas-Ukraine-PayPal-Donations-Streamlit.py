@@ -111,7 +111,7 @@ def donations_by_period_by_category(donations_total_by_category, large_donations
     if  amount == '>$2,500':
         donations_by_category = large_donations_by_category
     elif amount == '<$2,500':
-         donations_by_category = donations_below_large_by_category
+        donations_by_category = donations_below_large_by_category
     else:
         donations_by_category = donations_total_by_category
 
@@ -124,7 +124,12 @@ def donations_by_period_by_category(donations_total_by_category, large_donations
     elif timespan == '1 year':
         tx_by_category = tx_by_category[tx_by_category['Date'] > pd.Timestamp.now() - pd.DateOffset(years=1)]
 
-    fig = charting_tools.chart_by_period(tx_by_category, main_categories, selected_period[0],'')
+    #fig = charting_tools.chart_by_period(tx_by_category, main_categories, selected_period[0],'')
+    data_sum_by_period_by_category = da.sum_by_period_by_category(main_categories, selected_period[0], tx_by_category, 'Category').fillna(0)
+    if selected_period[0] == 'W':
+        data_sum_by_period_by_category['Date'] = data_sum_by_period_by_category['Date'].astype(str).str.split('/').str[0]
+
+    fig = charting_tools.stack_bar_plot(data_sum_by_period_by_category, '', False)
     st.plotly_chart(fig, use_container_width=True)
 
 donations_by_period_by_category(donations_total_by_category, large_donations_by_category, donations_below_large_by_category)

@@ -110,7 +110,7 @@ def etl(df):
     df.loc[mask, 'Category'] = 'Mobile Shower Laundry Units'
     mask = df['Category'].str.contains('shower', case=False, na=False)
     df.loc[mask, 'Category'] = 'Mobile Shower Laundry Units'
-
+    
     file_path = 'data/PayPal.csv'
 
     try:
@@ -143,7 +143,7 @@ def ETL_raw_data():
 
     df = pd.read_csv('data/PayPal.csv', dtype = dtypes, parse_dates=['Date'])
 
-    df = df.drop_duplicates()
+    #df = df.drop_duplicates()
 
     df.loc[:, 'Category'] = df['Category'].fillna('')
 
@@ -161,10 +161,12 @@ def ETL_raw_data():
     # above $2500 (large donations)
     amount = 2500
     large_donations = df[df['Amount'] >= amount].fillna('')
+    large_donations['Date'] = large_donations['Date'].dt.date
     large_donations_by_category = large_donations.groupby(['Date', 'Category']).sum().reset_index()
 
     # below $2500 (crowdfunding)
     donations_below_large_by_category = df[df.Amount < amount]
+    donations_below_large_by_category['Date'] = donations_below_large_by_category['Date'].dt.date
     donations_below_large_by_category = donations_below_large_by_category.groupby(
                                         ['Date', 'Category']).sum().reset_index()
     df = df_original

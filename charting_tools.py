@@ -92,25 +92,72 @@ def bar_plot(data, col, fig_title, show):
         return fig
 
 
-def stack_bar_plot(df, title, show):
-    """stacked bar plot with mean"""
-    df['Date'] = df['Date'].astype(str)
-    mean_value = df[df.columns[1:]].sum(axis=1).mean()
+# def stack_bar_plot(df, title, show):
+#     """stacked bar plot with mean"""
+#     df['Date'] = df['Date'].astype(str)
+#     mean_value = df[df.columns[1:]].sum(axis=1).mean()
 
+#     fig = go.Figure()
+# #    for column in df.columns[1:]:
+#     for column in df.select_dtypes(include=[np.number]).columns:
+#         fig.add_trace(
+#                 go.Bar(name=column, x = df['Date'], y = df[column],
+#                     text = df[column].apply(etl.format_money_USD)
+#         ))
+
+#     fig.update_layout(
+#         barmode='stack',
+#         title = title,
+#         legend=dict(orientation='h', x=0, y=1.15),
+#         xaxis=dict(tickformat='%b'),
+#     # Add a horizontal line at the mean value
+#         shapes=[
+#             dict(
+#                 type='line',
+#                 x0=df['Date'].iloc[0],
+#                 x1=df['Date'].iloc[-1],
+#                 y0=mean_value,
+#                 y1=mean_value,
+#                 line=dict(color='blue', dash='dot')
+#             )
+#         ]
+#     )
+#     if show:
+#         fig.show(renderer="notebook")
+#     else:
+#         return fig
+
+
+def stack_bar_plot(df, title, show):
+    """Stacked bar plot with mean, displaying formatted monetary values on each slice."""
+    # Ensure 'Date' is of type string for plotting
+    df['Date'] = df['Date'].astype(str)
+    # Calculate the overall mean value of sums across numeric columns for each date
+    mean_value = df[df.select_dtypes(include=[np.number]).columns].sum(axis=1).mean()
+
+    # Initialize the figure
     fig = go.Figure()
-#    for column in df.columns[1:]:
+
+    # Iterate through numeric columns to add as separate bar traces
     for column in df.select_dtypes(include=[np.number]).columns:
         fig.add_trace(
-                go.Bar(name=column, x = df['Date'], y = df[column],
-                    text = df[column].apply(etl.format_money_USD)
-        ))
+            go.Bar(
+                name=column,
+                x=df['Date'],
+                y=df[column],
+                text=df[column].apply(etl.format_money_USD),
+                textposition='auto'  # This ensures text labels are placed on the bars
+            )
+        )
 
+    # Set up the layout with stacking, title, and axis formatting
     fig.update_layout(
         barmode='stack',
-        title = title,
+        title=title,
         legend=dict(orientation='h', x=0, y=1.15),
         xaxis=dict(tickformat='%b'),
-    # Add a horizontal line at the mean value
+
+        # Add a horizontal line at the mean value
         shapes=[
             dict(
                 type='line',
@@ -122,7 +169,10 @@ def stack_bar_plot(df, title, show):
             )
         ]
     )
+
+    # Show or return the plot based on the 'show' parameter
     if show:
         fig.show(renderer="notebook")
     else:
         return fig
+

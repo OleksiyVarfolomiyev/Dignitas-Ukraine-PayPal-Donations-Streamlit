@@ -110,7 +110,7 @@ def etl(df):
     df.loc[mask, 'Category'] = 'Mobile Shower Laundry Units'
     mask = df['Category'].str.contains('shower', case=False, na=False)
     df.loc[mask, 'Category'] = 'Mobile Shower Laundry Units'
-    
+
     file_path = 'data/PayPal.csv'
 
     try:
@@ -150,6 +150,7 @@ def ETL_raw_data():
     df['Category'] = df['Category'].replace('100 Drones for Ukraine', '1000 Drones for Ukraine')
     df['Category'] = df['Category'].replace('Milan', '1000 Drones for Ukraine')
     df['Category'] = df['Category'].replace('BOSTON', '1000 Drones for Ukraine')
+    df['Category'] = df['Category'].replace('"VD_TEP"', 'Victory Drones')
     df['Date'] = df['Date'].dt.strftime('%Y-%m-%d %H:%M')
     df['Date'] = pd.to_datetime(df['Date'])
 

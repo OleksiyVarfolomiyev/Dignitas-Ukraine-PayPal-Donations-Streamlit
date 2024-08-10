@@ -12,7 +12,7 @@ donations_total, donations_total_by_category = rpd.read_new_PayPal_txs_from_AWS(
 
 
 #st.title("Dignitas Ukraine **PayPal Donations**")
-st.markdown("<h1 style='text-align: center;'>Dignitas Ukraine <b>Donations</b></h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Dignitas Ukraine <b>PayPal Donations</b></h1>", unsafe_allow_html=True)
 
 
 def show_metrics(donations_total, df):

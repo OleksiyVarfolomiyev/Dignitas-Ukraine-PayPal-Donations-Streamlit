@@ -2382,7 +2382,7 @@ Date,FullName,City,Currency,Category,TransactionNote,Amount
 2024-04-28 10:56:43+00:00,Andrei,Owings Mills,USD,General,,50.47
 2024-04-28 11:23:32+00:00,Ruslan,Hilden,USD,General,,24.84
 2024-04-28 11:38:31+00:00,Vladyslava,Bollendorf-Pont,USD,General,,9.84
-2024-04-28 11:41:14+00:00,Eva,Berlin,USD,General,,9.930000000000001
+2024-04-28 11:41:14+00:00,Eva,Berlin,USD,General,,9.93
 2024-04-28 16:13:08+00:00,David,Allison Park,USD,General,Keep up the GREAT work.   You MUST win the war.  ,100.0
 2024-04-28 19:28:14+00:00,Shannon,Prairie Village,USD,General,,25.0
 2024-04-28 19:55:06+00:00,,,EUR,,,100.0
@@ -2392,10 +2392,10 @@ Date,FullName,City,Currency,Category,TransactionNote,Amount
 2024-04-28 21:32:37+00:00,Anders,Södra Sandby,USD,Victory Drones,,492.34
 2024-04-29 04:10:52+00:00,,,USD,,,500.0
 2024-04-29 06:57:07+00:00,Olha,Karlsruhe,USD,General,,39.38
-2024-04-29 10:09:41+00:00,Mikhail,Homebush West,USD,General,,99.38000000000001
+2024-04-29 10:09:41+00:00,Mikhail,Homebush West,USD,General,,99.38
 2024-04-29 10:27:27+00:00,Alessio,Pregnana Milanese,USD,Flight to Recovery,,9.84
-2024-04-29 11:18:54+00:00,Francis,Mannheim,USD,1000 Drones for Ukraine,,98.46000000000001
-2024-04-29 18:32:22+00:00,Nataliia,Calgary,USD,General,Slava Ukraini! Slava Nashym Geroiam! Smert vorogam!,98.46000000000001
+2024-04-29 11:18:54+00:00,Francis,Mannheim,USD,1000 Drones for Ukraine,,98.46
+2024-04-29 18:32:22+00:00,Nataliia,Calgary,USD,General,Slava Ukraini! Slava Nashym Geroiam! Smert vorogam!,98.46
 2024-04-30 10:05:29+00:00,Юрий,Днепропетровск,USD,General,,5.3
 2024-04-30 10:47:24+00:00,Yana,El Cerrito,USD,General,,195.53
 2024-04-30 15:59:08+00:00,Joshua,Tacoma,USD,General,"Lyuva and Maria, thank you for letting us visit your training and for speaking with our guests from the Asia-Pacific region.   More importantly, thank you for the work you do!",97.52
@@ -2408,7 +2408,7 @@ Date,FullName,City,Currency,Category,TransactionNote,Amount
 2024-05-02 01:43:43+00:00,Yelena,State College,USD,General,,50.0
 2024-05-02 02:49:45+00:00,Ihor,New York,USD,1000 Drones for Ukraine,1000 Drones for Ukraine,979.61
 2024-05-02 10:35:07+00:00,Serghei,Chisinau,USD,1000 Drones for Ukraine,,10.93
-2024-05-02 11:40:55+00:00,Artem,Sint-Amandsberg,USD,General,,98.46000000000001
+2024-05-02 11:40:55+00:00,Artem,Sint-Amandsberg,USD,General,,98.46
 2024-05-02 11:42:55+00:00,Orest,West Bloomfield,USD,1000 Drones for Ukraine,,10.0
 2024-05-02 11:48:58+00:00,Yevgen,Mannheim,USD,General,,9.84
 2024-05-03 01:08:59+00:00,Ivan,Brooklyn,USD,1000 Drones for Ukraine,,100.0
@@ -2421,14 +2421,14 @@ Date,FullName,City,Currency,Category,TransactionNote,Amount
 2024-05-03 21:30:14+00:00,Forrest,El Cerrito,USD,1000 Drones for Ukraine,,200.0
 2024-05-04 08:40:56+00:00,Olha,Karlsruhe,USD,General,,9.84
 2024-05-04 10:01:49+00:00,Igor,Brooklyn,USD,General,,25.0
-2024-05-04 10:32:00+00:00,Mikhail,Homebush West,USD,Victory Drones,,99.38000000000001
-2024-05-04 10:48:17+00:00,Mikhail,Homebush West,USD,Flight to Recovery,,99.38000000000001
+2024-05-04 10:32:00+00:00,Mikhail,Homebush West,USD,Victory Drones,,99.38
+2024-05-04 10:48:17+00:00,Mikhail,Homebush West,USD,Flight to Recovery,,99.38
 2024-05-04 11:43:44+00:00,Andrei,Owings Mills,USD,Flight to Recovery,,50.47
 2024-05-04 13:26:21+00:00,Oleksii,Toronto,USD,General,,68.92
 2024-05-04 20:18:20+00:00,Yuriy,Saratoga,USD,Victory Drones,,100.0
 2024-05-04 20:19:04+00:00,Yuriy,Saratoga,USD,1000 Drones for Ukraine,,100.0
 2024-05-04 20:36:27+00:00,Vladimir,Fort Worth,USD,General,,100.0
-2024-05-05 05:14:49+00:00,Katsai,Ihlow,USD,General,,49.230000000000004
+2024-05-05 05:14:49+00:00,Katsai,Ihlow,USD,General,,49.23
 2024-05-05 07:08:49+00:00,Lyudmyla,Ruy,USD,General,,108.31
 2024-05-05 10:23:41+00:00,Evgen,Kyiv,USD,Victory Drones,,18.81
 2024-05-05 10:24:30+00:00,Nataliya,Manalapan,USD,General,,102.53
@@ -2438,7 +2438,7 @@ Date,FullName,City,Currency,Category,TransactionNote,Amount
 2024-05-06 11:15:06+00:00,Elias,Pordenone,USD,Flight to Recovery,,13.77
 2024-05-06 11:36:30+00:00,Margaryta,Jossgrund,USD,General,,4.34
 2024-05-06 12:33:27+00:00,Olha,,USD,Mobile Shower Laundry Units,,13.99
-2024-05-06 13:15:56+00:00,Daniel,Ucel,USD,1000 Drones for Ukraine,,98.46000000000001
+2024-05-06 13:15:56+00:00,Daniel,Ucel,USD,1000 Drones for Ukraine,,98.46
 2024-05-06 13:38:46+00:00,Patrick,,USD,Mobile Shower Laundry Units,,97.52
 2024-05-06 15:11:49+00:00,Paul,Berlin,USD,General,,964.61
 2024-05-06 20:03:05+00:00,Igor,N.D.I.P,USD,General,,492.34
@@ -2448,12 +2448,12 @@ Date,FullName,City,Currency,Category,TransactionNote,Amount
 2024-05-07 10:46:12+00:00,Dmitry,Brunswick East,USD,General,,19.69
 2024-05-07 11:37:33+00:00,Anna,Vernon Hills,USD,General,,25.24
 2024-05-07 16:51:22+00:00,Roman,Kraków,USD,1000 Drones for Ukraine,,23.64
-2024-05-07 19:35:13+00:00,Olha,Krakow,USD,General,,98.46000000000001
+2024-05-07 19:35:13+00:00,Olha,Krakow,USD,General,,98.46
 2024-05-08 04:15:32+00:00,Leo,Miami,USD,General,,30.0
 2024-05-08 18:03:17+00:00,George,Jackson,USD,General,,489.56
-2024-05-08 19:45:13+00:00,Kateryna,Weesp,USD,1000 Drones for Ukraine,,49.230000000000004
+2024-05-08 19:45:13+00:00,Kateryna,Weesp,USD,1000 Drones for Ukraine,,49.23
 2024-05-08 23:56:38+00:00,Pavlo,New York,USD,1000 Drones for Ukraine,,700.0
-2024-05-09 00:04:06+00:00,Nataly,Mississauga,USD,1000 Drones for Ukraine,,98.46000000000001
+2024-05-09 00:04:06+00:00,Nataly,Mississauga,USD,1000 Drones for Ukraine,,98.46
 2024-05-09 00:21:15+00:00,Oksana,San Diego,USD,General,,97.52
 2024-05-09 02:47:50+00:00,Olga,Mississauga,USD,1000 Drones for Ukraine,,196.93
 2024-05-09 05:05:20+00:00,Leo,San Francisco,USD,Victory Drones,,100.0
@@ -2462,11 +2462,11 @@ Date,FullName,City,Currency,Category,TransactionNote,Amount
 2024-05-09 11:31:34+00:00,Axel,Heikendorf,USD,1000 Drones for Ukraine,,19.69
 2024-05-09 11:42:34+00:00,Veronika,Kyiv,USD,General,,163.58
 2024-05-09 16:31:03+00:00,Olena,Plainfield,USD,General,,30.0
-2024-05-09 17:27:56+00:00,Iurie,Hamburg,USD,General,,98.46000000000001
+2024-05-09 17:27:56+00:00,Iurie,Hamburg,USD,General,,98.46
 2024-05-09 17:32:02+00:00,Kateryna,Chicago,USD,General,,15.0
 2024-05-09 19:21:57+00:00,Olena,Plainfield,USD,General,,30.0
 2024-05-10 10:54:13+00:00,Sofiia,Marburg,USD,General,,29.81
-2024-05-10 11:08:23+00:00,Fetchrss,Mykolaiv,USD,General,,98.46000000000001
+2024-05-10 11:08:23+00:00,Fetchrss,Mykolaiv,USD,General,,98.46
 2024-05-10 11:18:25+00:00,Greenwood,Wakefield,USD,General,,100.0
 2024-05-10 11:38:33+00:00,Khrystyna,Reading,USD,General,,147.70000000000002
 2024-05-10 14:01:26+00:00,Michael,New York,USD,General,,25.0
@@ -2497,13 +2497,13 @@ Date,FullName,City,Currency,Category,TransactionNote,Amount
 2024-05-11 11:47:13+00:00,Lidiia,New York,USD,General,,4.41
 2024-05-11 16:24:32+00:00,Ruslan,Chicago,USD,1000 Drones for Ukraine,,12.5
 2024-05-11 17:03:50+00:00,Yuliya,Louisville,USD,General,,20.0
-2024-05-11 19:02:35+00:00,Nadiia,Leipzig,USD,General,,49.230000000000004
+2024-05-11 19:02:35+00:00,Nadiia,Leipzig,USD,General,,49.23
 2024-05-11 20:47:34+00:00,Arianne,Roma,USD,1000 Drones for Ukraine,,23.64
 2024-05-11 21:11:28+00:00,Benjamin,Chicago,USD,"""VD_TEP""",,1000.0
 2024-05-11 21:30:28+00:00,Vitalii,Chicago,USD,General,,30.0
-2024-05-11 21:36:56+00:00,Yevhen,Amsterdam,USD,General,,49.230000000000004
+2024-05-11 21:36:56+00:00,Yevhen,Amsterdam,USD,General,,49.23
 2024-05-11 21:39:34+00:00,Valeriy,Chicago,USD,General,,28.91
-2024-05-11 21:43:49+00:00,Oleh,Calgary,USD,General,Слава Україні! До перемоги!,98.46000000000001
+2024-05-11 21:43:49+00:00,Oleh,Calgary,USD,General,Слава Україні! До перемоги!,98.46
 2024-05-11 21:49:37+00:00,Anastasiya,Chicago,USD,General,,24.01
 2024-05-11 22:02:01+00:00,Anastasiia,Mount Prospect,USD,General,,50.0
 2024-05-11 22:02:22+00:00,Yaryna,Palos Hills,USD,General,,20.0
@@ -2518,7 +2518,7 @@ Date,FullName,City,Currency,Category,TransactionNote,Amount
 2024-05-13 10:32:21+00:00,Kseniia,Ashland ,USD,General,,50.47
 2024-05-13 11:14:17+00:00,Polina,London,USD,General,,47.76
 2024-05-13 11:55:48+00:00,Ed,Washington,USD,General,,25.24
-2024-05-13 13:53:10+00:00,Viktoriia,Salaberry-De-Valleyfield,USD,General,,98.46000000000001
+2024-05-13 13:53:10+00:00,Viktoriia,Salaberry-De-Valleyfield,USD,General,,98.46
 2024-05-13 15:15:03+00:00,Irina,Chicago,USD,General,Please receive this donation from Oles Nakonechny!,979.61
 2024-05-13 15:38:35+00:00,Yevgen,New York,USD,1000 Drones for Ukraine,,10.0
 2024-05-13 16:36:38+00:00,Viktoriya,Nantes,USD,General,,39.38
@@ -2532,3 +2532,648 @@ Date,FullName,City,Currency,Category,TransactionNote,Amount
 2024-05-14 21:15:46+00:00,Kirsten,Chicago,USD,General,,489.56
 2024-05-14 21:17:47+00:00,Dita,Chicago,USD,General,,195.53
 2024-05-14 21:22:25+00:00,Iryna,Galena,USD,General,,200.0
+2024-05-15 05:49:53+00:00,Volodymyr,Krakow,USD,General,,29.53
+2024-05-15 10:38:03+00:00,John,West Melbourne,USD,Victory Drones,,49.23
+2024-05-15 10:47:18+00:00,Maria,London,USD,General,,49.23
+2024-05-15 16:05:04+00:00,Kateryna,Chicago,USD,,,14.21
+2024-05-15 16:05:40+00:00,Kateryna,Chicago,USD,,,14.21
+2024-05-15 16:06:16+00:00,Kateryna,Chicago,USD,,Donation,14.21
+2024-05-15 16:11:42+00:00,Yuri,North Potomac,USD,General,,500.0
+2024-05-15 16:29:41+00:00,Leslie,Rydal,USD,General,,100.0
+2024-05-15 16:38:04+00:00,Nicholas,Brighton,USD,General,,100.0
+2024-05-15 16:48:17+00:00,Roman,Waukesha,USD,General,,100.0
+2024-05-15 16:50:47+00:00,Alexander,Buffalo Grove,USD,General,,500.0
+2024-05-15 17:12:38+00:00,Svitlana,New York,USD,General,,9.31
+2024-05-15 20:48:55+00:00,Oksana,Rovigo,USD,General,,34.46
+2024-05-15 21:35:36+00:00,Iryna,Silver Spring,USD,General,,48.51
+2024-05-15 22:21:29+00:00,Marta,New York,USD,General,,60.0
+2024-05-15 23:18:19+00:00,Shannon,Prairie Village ,USD,Victory Drones,,50.0
+2024-05-15 23:31:21+00:00,Jana,San Francisco,USD,General,,100.0
+2024-05-16 00:46:14+00:00,Jeffrey,Grove City,USD,General,Slava Ukraini,15.0
+2024-05-16 00:56:45+00:00,Elena,Brooklyn,USD,General,,73.02
+2024-05-16 01:07:57+00:00,Olga,Norwalk,USD,General,,293.54
+2024-05-16 01:10:55+00:00,Andrei,Owings Mills,USD,1000 Drones for Ukraine,,100.0
+2024-05-16 01:11:58+00:00,Andrei,Owings Mills,USD,Victory Drones,,100.0
+2024-05-16 01:42:12+00:00,Daria,San Carlos,USD,General,,100.0
+2024-05-16 03:48:29+00:00,Maryna,San Francisco,USD,General,,100.0
+2024-05-16 04:10:10+00:00,Oksana,Arlington,USD,General,,500.0
+2024-05-16 06:36:03+00:00,Kateryna,Gentofte,USD,General,,33.08
+2024-05-16 06:42:23+00:00,Yurii,Snohomish,USD,General,,100.0
+2024-05-16 07:16:02+00:00,Alexander,Berlin,USD,General,,94.82
+2024-05-16 08:42:49+00:00,Oleksiy,Chorzów,USD,General,,49.23
+2024-05-16 10:49:58+00:00,Sven,,USD,General,,20.95
+2024-05-16 10:58:08+00:00,Inna,Kępno,USD,General,,96.02
+2024-05-16 11:37:54+00:00,Ihor,Berlin,USD,General,,99.38
+2024-05-16 11:38:33+00:00,Alisa,Wilmington,USD,General,,48.51
+2024-05-16 12:50:18+00:00,Antonina,Liberty Township,USD,General,,200.0
+2024-05-16 12:52:31+00:00,Mariana,Langhorne,USD,General,,97.52
+2024-05-16 12:54:37+00:00,Liliia,Trondheim,USD,Victory Drones,Glory to Ukraine,19.69
+2024-05-16 13:13:04+00:00,Viktoriya,Basking Ridge,USD,1000 Drones for Ukraine,,97.52
+2024-05-16 13:24:19+00:00,George,Boca Raton,USD,,,146.52
+2024-05-16 15:21:29+00:00,Olha,Rockaway Beach,USD,,For Oksana Rushinets lottery,14.21
+2024-05-16 15:50:24+00:00,Maksym,Ottawa,USD,General,,98.46
+2024-05-16 16:47:25+00:00,Irene,Scottsdale,USD,General,,90.0
+2024-05-16 16:58:49+00:00,Stanislav,Borup,USD,,,47.76
+2024-05-17 01:15:17+00:00,Oleksandra,Bonita Springs,USD,General,,100.0
+2024-05-17 09:07:28+00:00,Olena,Langenselbold,USD,General,,49.23
+2024-05-17 10:37:55+00:00,Sven,Pärnumaa,USD,General,,47.76
+2024-05-17 10:39:25+00:00,Stanislav,Lake Ariel,USD,1000 Drones for Ukraine,,97.52
+2024-05-17 10:43:53+00:00,Natalia,Edinburgh,USD,Victory Drones,,2.97
+2024-05-17 10:49:04+00:00,Liubov,High Wycombe,USD,General,,47.76
+2024-05-17 12:15:58+00:00,Lidiia,New York,USD,General,,4.41
+2024-05-17 14:51:25+00:00,Mykhaylo,Stamford,USD,1000 Drones for Ukraine,,24.01
+2024-05-17 23:13:36+00:00,Yuliya,Edgewater,USD,Victory Drones,,195.53
+2024-05-17 23:13:49+00:00,Anatoliy,Lehi,USD,,Drone or any other stuff,293.54
+2024-05-18 00:20:46+00:00,Mariia,Hoboken,USD,General,,300.0
+2024-05-18 06:48:10+00:00,Anri,San Diego,USD,General,,48.51
+2024-05-18 10:19:46+00:00,Olga,Hamburg,USD,General,,47.76
+2024-05-18 11:35:53+00:00,Olexiy,Palm Harbor,USD,Victory Drones,,48.51
+2024-05-18 14:25:47+00:00,Olena,Søborg,USD,General,,19.69
+2024-05-18 15:34:33+00:00,Yana,Queens,USD,General,,20.0
+2024-05-18 18:18:51+00:00,Dmytro,Los Angeles,USD,General,,18.81
+2024-05-18 18:34:22+00:00,Exponentialworks,Aguadilla,USD,General,,40.0
+2024-05-18 19:08:54+00:00,Ivan,Everett,USD,1000 Drones for Ukraine,,10.0
+2024-05-18 20:40:49+00:00,Maryna,Uelzen,USD,Victory Drones,,44.3
+2024-05-18 20:59:42+00:00,Yuliya,New York,USD,General,,24.01
+2024-05-18 21:19:50+00:00,Iryna,København,USD,,,134.05999999999997
+2024-05-18 21:33:25+00:00,Oksana,Fair Lawn ,USD,,Hoodie,146.52
+2024-05-19 00:29:32+00:00,Yuriy,Flushing,USD,General,,200.0
+2024-05-19 01:48:56+00:00,Igor,N.D.I.P,USD,General,,98.46
+2024-05-19 02:04:38+00:00,Lydia,Wayne,USD,General,,48.51
+2024-05-19 03:02:35+00:00,Pavel,San Antonio,USD,General,,50.0
+2024-05-19 09:49:10+00:00,Tetiana,Żory,USD,General,,9.16
+2024-05-19 10:48:45+00:00,Valentyna,Farnham,USD,General,,9.93
+2024-05-19 10:49:45+00:00,Reid,New York,USD,General,,489.56
+2024-05-19 11:01:43+00:00,Ievgen,Cheltenham,USD,General,,19.69
+2024-05-19 11:25:46+00:00,Vladyslava,Poznań,USD,General,,19.87
+2024-05-19 15:16:24+00:00,Khrystyna,Reading,USD,Victory Drones,,482.06
+2024-05-19 17:37:14+00:00,Andrei,Brooklyn,USD,1000 Drones for Ukraine,На дрони 79 ДШБ,9200.0
+2024-05-19 17:47:21+00:00,Vincent,Kulpmont,USD,,,48.51
+2024-05-19 17:48:22+00:00,Michael,New York,USD,General,,200.0
+2024-05-19 18:15:50+00:00,Maria,Bonn,USD,General,,196.93
+2024-05-19 19:35:55+00:00,Edvīns,Rīga,USD,General,,19.69
+2024-05-19 20:20:53+00:00,Kateryna,London ,USD,General,,9.16
+2024-05-19 20:38:55+00:00,Jerome,Tuckahoe,USD,1000 Drones for Ukraine,,50.0
+2024-05-19 20:56:56+00:00,Kateryna,Weesp,USD,1000 Drones for Ukraine,,98.46
+2024-05-19 21:21:40+00:00,Lawrence,Brooklyn,USD,General,,150.0
+2024-05-19 21:29:25+00:00,Tighe,New York,USD,1000 Drones for Ukraine,,50.0
+2024-05-19 21:31:51+00:00,Вера,Умань,USD,General,,9.16
+2024-05-20 10:09:44+00:00,Michael,Short Hills,USD,General,,70.08
+2024-05-20 10:34:38+00:00,Andriy,Vigo,USD,Victory Drones,,19.69
+2024-05-20 11:14:30+00:00,Platon,Kovalyn,USD,General,,9.16
+2024-05-20 21:14:39+00:00,Railbandit,Redlands,USD,General,Donation/support for Ukraine.  ,48.51
+2024-05-20 23:22:45+00:00,Lidiia,New York,USD,General,,1.47
+2024-05-21 10:18:14+00:00,Anders,Årsta,USD,General,,23.63
+2024-05-21 10:27:12+00:00,Vira,Berkeley,USD,General,,68.12
+2024-05-21 11:17:11+00:00,Olha,Krakow,USD,General,,24.84
+2024-05-22 10:20:03+00:00,Daryna,Limassol,USD,General,,19.87
+2024-05-22 16:09:29+00:00,Olga,,USD,,Люті пташки ��❤️�,234.54
+2024-05-22 20:33:41+00:00,Yuliia,Port Reading,USD,General,,50.0
+2024-05-23 08:07:22+00:00,Darya,Kolding,USD,,,19.66
+2024-05-23 08:44:05+00:00,Alex,Almere,USD,,На Дрони,250.02
+2024-05-23 09:59:35+00:00,Marco,,USD,1000 Drones for Ukraine,,47.76
+2024-05-23 10:27:26+00:00,Oleksandra,Woosbridge,USD,General,,67.07
+2024-05-23 10:34:25+00:00,Sixty1design,N.Vancouver,USD,General,,298.14
+2024-05-23 10:35:27+00:00,Diane,Edinburgh,USD,Victory Drones,,2.97
+2024-05-23 16:19:35+00:00,Igor,Dresden,USD,General,,23.64
+2024-05-24 07:54:27+00:00,Brigitte,,USD,Mobile Shower Laundry Units,,9.31
+2024-05-24 10:03:08+00:00,Plan-h-analytics,Gulf Breeze,USD,Flight to Recovery,,50.0
+2024-05-24 10:36:00+00:00,Valeriya,Düsseldorf,USD,General,,2.41
+2024-05-24 11:09:02+00:00,Paypal,,USD,,2000275019,863.4
+2024-05-24 14:38:06+00:00,Daniel,Ucel,USD,1000 Drones for Ukraine,,98.46
+2024-05-24 20:30:00+00:00,Nataliya,Lviv,USD,General,,1.96
+2024-05-25 05:11:20+00:00,Oleksandr,Zurich,USD,Victory Drones,,98.46
+2024-05-25 05:11:38+00:00,Iurii,Montréal,USD,Victory Drones,,23.64
+2024-05-25 09:03:09+00:00,Iuliia,London,USD,General,,9.16
+2024-05-25 10:35:40+00:00,Christoph,Trondheim,USD,Victory Drones,,147.70000000000002
+2024-05-25 11:30:21+00:00,Olena,Buchillon,USD,1000 Drones for Ukraine,,196.93
+2024-05-25 16:30:11+00:00,James,,USD,Mobile Shower Laundry Units,,15.0
+2024-05-25 16:42:45+00:00,Martin,Leland,USD,,,97.52
+2024-05-25 16:45:03+00:00,Catherine,Wilmington,USD,General,,195.53
+2024-05-25 17:22:39+00:00,Romana,Southport,USD,General,,97.52
+2024-05-25 18:08:39+00:00,Cstherine,Wilmington,USD,General,,195.53
+2024-05-25 18:40:05+00:00,Tara,Wilmington,USD,1000 Drones for Ukraine,,20.0
+2024-05-25 19:13:39+00:00,Anastasiia,Sneads Ferry,USD,General,,20.0
+2024-05-25 19:17:27+00:00,Dmitry,Fort Lee,USD,General,Для ветеринiв ЗСУ,15.0
+2024-05-25 20:06:24+00:00,Massimiliano,Doncaster,USD,General,,118.16
+2024-05-25 20:08:22+00:00,Lidiia,New York,USD,General,,4.41
+2024-05-25 20:29:33+00:00,David,Wilmington,USD,1000 Drones for Ukraine,,50.0
+2024-05-26 06:20:54+00:00,David,Buckeye,USD,1000 Drones for Ukraine,,100.0
+2024-05-26 11:20:38+00:00,Nataliia,Honokaa,USD,General,,28.91
+2024-05-26 22:10:31+00:00,Luna,Falls Church,USD,,,48.51
+2024-05-27 10:47:17+00:00,Olga,,USD,Victory Drones,,100.93
+2024-05-27 15:01:58+00:00,Hannah,Newton Centre,USD,General,,100.0
+2024-05-27 17:43:50+00:00,Oleg,Ripollet,USD,Victory Drones,,4.91
+2024-05-27 17:55:45+00:00,Olha,Karlsruhe,USD,General,,9.84
+2024-05-27 21:36:44+00:00,Railbandit,Redlands,USD,General,,48.51
+2024-05-28 03:44:14+00:00,Alexander,Lakewood,USD,General,,97.52
+2024-05-28 10:18:52+00:00,Eva,Berlin,USD,General,,9.93
+2024-05-28 10:20:36+00:00,Vitalii,Mississauga,USD,General,,9.84
+2024-05-28 10:39:25+00:00,Vira,Elmwood Park,USD,Victory Drones,,28.91
+2024-05-28 10:55:04+00:00,Ruslan,Hilden,USD,General,,24.84
+2024-05-28 10:56:23+00:00,Yevgen,Mannheim,USD,General,,4.960000000000001
+2024-05-28 10:59:11+00:00,Halyna,Freiburg Im Breisgau,USD,General,,149.07
+2024-05-28 11:14:04+00:00,Vladyslava,Bollendorf-Pont,USD,General,,9.84
+2024-05-28 11:37:37+00:00,Andrei,Owings Mills,USD,General,,50.47
+2024-05-28 14:29:14+00:00,Cstherine,,USD,Duplicated transaction refund.,Duplicated transaction refund.,203.98
+2024-05-28 20:42:02+00:00,Dmytro,Springfield,USD,General,,489.56
+2024-05-28 22:10:47+00:00,Alexander,Brooklyn,USD,,,0.49
+2024-05-28 22:12:02+00:00,,,USD,,,49500.0
+2024-05-29 02:05:43+00:00,David,Allison Park,USD,General,,150.0
+2024-05-29 11:09:12+00:00,Francis,Mannheim,USD,1000 Drones for Ukraine,,98.46
+2024-05-29 11:39:02+00:00,Alessio,Pregnana Milanese,USD,Flight to Recovery,,9.84
+2024-05-29 11:39:53+00:00,Mikhail,Homebush West,USD,General,,99.38
+2024-05-30 12:10:17+00:00,Юрий,Днепропетровск,USD,General,,5.3
+2024-05-30 16:00:51+00:00,Marco,,USD,1000 Drones for Ukraine,,9.16
+2024-05-31 10:11:35+00:00,Yana,El Cerrito,USD,General,,195.53
+2024-05-31 10:51:05+00:00,Alexander,Little Falls,USD,Victory Drones,,48.51
+2024-05-31 10:52:46+00:00,Alexander,Little Falls,USD,Flight to Recovery,,24.01
+2024-05-31 10:56:19+00:00,Alexander,Little Falls,USD,Victory Drones,,24.01
+2024-05-31 14:39:25+00:00,Eric,Ooltewah,USD,1000 Drones for Ukraine,,200.0
+2024-05-31 20:38:27+00:00,Vardaan,Malibu,USD,General,,15.0
+2024-05-31 23:03:47+00:00,Shannon,Prairie Village ,USD,General,,10.0
+2024-06-01 01:13:59+00:00,Luna,Falls Church,USD,,"Слава Україні! I’m not rich but I budget for a contribution every other week.   Hopefully this money helps in the fight, I wish I was able to give more.  ",73.02
+2024-06-01 03:07:00+00:00,Yukhym,Brooklyn,USD,,,73.02
+2024-06-01 05:59:05+00:00,Andriy,Vigo,USD,Victory Drones,,29.53
+2024-06-01 07:51:16+00:00,Constantin,Capriate San Gervasio,USD,1000 Drones for Ukraine,,14.760000000000002
+2024-06-01 08:53:19+00:00,Andrei,Warszawa,USD,Victory Drones,,96.02
+2024-06-01 10:48:50+00:00,Oleksandra,Duisburg,USD,General,,19.69
+2024-06-01 10:55:59+00:00,Tetiana,Mainz,USD,1000 Drones for Ukraine,,24.84
+2024-06-01 12:59:48+00:00,Eric,Draveil,USD,Victory Drones,,59.08
+2024-06-02 01:49:45+00:00,Vladimir,Fort Worth,USD,General,,100.0
+2024-06-02 04:01:38+00:00,Cheng,,USD,Mobile Shower Laundry Units,,97.52
+2024-06-02 10:08:44+00:00,Orest,West Bloomfield,USD,1000 Drones for Ukraine,,10.0
+2024-06-02 10:39:41+00:00,Artem,Sint-Amandsberg,USD,General,,98.46
+2024-06-02 10:45:40+00:00,Serghei,Chisinau,USD,1000 Drones for Ukraine,,10.93
+2024-06-02 10:57:21+00:00,Yevgen,Mannheim,USD,General,,9.84
+2024-06-02 11:43:27+00:00,Serghei,Chisinau,USD,General,,11.92
+2024-06-02 12:24:42+00:00,Ganna,Zwaag,USD,General,,25.57
+2024-06-02 14:33:53+00:00,Peter,Uppsala,USD,1000 Drones for Ukraine,,93.54
+2024-06-02 18:25:20+00:00,Katya,Brooklyn,USD,General,,30.0
+2024-06-02 18:27:36+00:00,John,New York,USD,General,,10.0
+2024-06-02 18:47:18+00:00,Zhanna,New York,USD,General,,24.01
+2024-06-02 18:49:51+00:00,Fayad,Bronx,USD,General,,45.0
+2024-06-02 18:57:17+00:00,Olena,Accord,USD,General,,20.0
+2024-06-02 19:15:43+00:00,Jake,Brooklyn,USD,General,,20.0
+2024-06-02 21:39:04+00:00,Jonathan,New York ,USD,1000 Drones for Ukraine,3 times Matching gift available from Open Society - sending form to Alex,489.56
+2024-06-02 22:28:54+00:00,Victor,Brooklyn,USD,,,587.57
+2024-06-03 11:23:57+00:00,Sarunas,Newington,USD,Victory Drones,,50.0
+2024-06-03 11:38:35+00:00,Olha,Krakow,USD,General,,29.81
+2024-06-03 18:08:55+00:00,Yelena,State College,USD,General,,50.0
+2024-06-03 21:18:42+00:00,Tetyana,Costa Adeje,USD,,,96.02
+2024-06-04 00:59:59+00:00,Ihor,Toronto,USD,General,,98.46
+2024-06-04 02:41:56+00:00,Oleg,London,USD,General,,246.17
+2024-06-04 10:21:34+00:00,Mikhail,Homebush West,USD,Victory Drones,,99.38
+2024-06-04 10:27:47+00:00,Mikhail,Homebush West,USD,Flight to Recovery,,99.38
+2024-06-04 10:41:54+00:00,Igor,Brooklyn,USD,General,,25.0
+2024-06-04 11:07:09+00:00,Andrei,Owings Mills,USD,Flight to Recovery,,50.47
+2024-06-04 11:07:55+00:00,Jonah,,USD,Mobile Shower Laundry Units,,195.53
+2024-06-04 15:21:14+00:00,Vadim,San Francisco,USD,,In honor of Fima Chpakhin’s birthday,97.52
+2024-06-04 22:57:47+00:00,Ruslan,Astoria,USD,1000 Drones for Ukraine,,50.0
+2024-06-05 10:21:28+00:00,Evgen,Kyiv,USD,Victory Drones,,18.81
+2024-06-05 11:07:06+00:00,Nataliya,Manalapan,USD,General,,102.53
+2024-06-05 11:43:43+00:00,Tom,Wells,USD,General,,14.21
+2024-06-05 12:33:23+00:00,Olha,Karlsruhe,USD,General,,27.57
+2024-06-05 15:26:07+00:00,Oleg,,USD,Mobile Shower Laundry Units,,47.76
+2024-06-05 16:11:00+00:00,Iryna,Korschenbroich,USD,Victory Drones,,9.16
+2024-06-05 18:14:43+00:00,Stan,Santa Monica,USD,General,,24.01
+2024-06-06 11:02:30+00:00,Margaryta,Jossgrund,USD,General,,4.34
+2024-06-06 11:24:50+00:00,Svitlana,Ewing,USD,General,,20.0
+2024-06-06 13:26:25+00:00,Bohdan,Vilnius,USD,General,,23.64
+2024-06-06 17:54:28+00:00,Michael,New York,USD,1000 Drones for Ukraine,,10.0
+2024-06-07 10:00:56+00:00,Anna,Vernon Hills,USD,General,,25.24
+2024-06-07 10:06:01+00:00,Julia,Bad Soden ,USD,General,,69.0
+2024-06-07 10:43:40+00:00,Dmitry,Brunswick East,USD,General,,19.69
+2024-06-07 20:36:09+00:00,Kateryna,Weesp,USD,General,,49.23
+2024-06-08 00:41:35+00:00,Alexander,Little Falls,USD,1000 Drones for Ukraine,,48.51
+2024-06-08 01:12:19+00:00,Alexander,,USD,Mobile Shower Laundry Units,,24.01
+2024-06-08 01:14:49+00:00,Alexander,Little Falls,USD,Flight to Recovery,,24.01
+2024-06-08 13:46:10+00:00,Gretchen,New York,USD,General,This donation is in the name of Alla Prokhovnik-Raphique,87.72
+2024-06-09 10:20:26+00:00,Fedor,Treviso,USD,General,,14.760000000000002
+2024-06-09 10:32:17+00:00,Axel,Heikendorf,USD,1000 Drones for Ukraine,,19.69
+2024-06-09 10:50:43+00:00,Iryna,Frankfurt Am Main,USD,General,,98.46
+2024-06-09 11:05:09+00:00,Nataliia,Indialantic,USD,General,,100.0
+2024-06-09 18:26:35+00:00,Jane,Brooklyn,USD,General,,35.0
+2024-06-09 18:55:54+00:00,Tetiana,Mariager,USD,,,18.81
+2024-06-09 22:48:10+00:00,Olga,Mississauga,USD,1000 Drones for Ukraine,,192.53
+2024-06-10 04:08:44+00:00,Iurii,Montréal,USD,General,,33.29
+2024-06-10 06:19:50+00:00,Oleg,Ripollet,USD,Victory Drones,,9.84
+2024-06-10 10:36:42+00:00,Greenwood,Wakefield,USD,General,,100.0
+2024-06-10 10:46:09+00:00,Fetchrss,Mykolaiv,USD,General,,98.46
+2024-06-10 10:58:07+00:00,Khrystyna,Reading,USD,General,,147.70000000000002
+2024-06-10 10:59:55+00:00,Sofiia,Marburg,USD,General,,29.81
+2024-06-10 19:09:10+00:00,Roman,Kraków,USD,1000 Drones for Ukraine,,22.67
+2024-06-11 10:30:41+00:00,Denis,Pälkäne,USD,General,,47.76
+2024-06-11 10:30:50+00:00,Vira,Berkeley,USD,General,,40.0
+2024-06-11 10:33:37+00:00,Viktoriia,Berlin,USD,General,,23.64
+2024-06-11 11:17:46+00:00,Shippingline.org,Guadalajara,USD,General,,4.960000000000001
+2024-06-11 11:22:29+00:00,Nataliia,Durham ,USD,General,,18.81
+2024-06-11 11:41:14+00:00,Kateryna,Antwerp ,USD,General,,96.02
+2024-06-11 11:42:44+00:00,Maryna,Brooklyn,USD,General,,100.93
+2024-06-11 15:46:09+00:00,Thomas,Coulanges Lès Nevers,USD,1000 Drones for Ukraine,,506.55
+2024-06-12 05:49:53+00:00,Yuriy,Saratoga,USD,Victory Drones,,100.0
+2024-06-12 05:51:35+00:00,Yuriy,Saratoga,USD,1000 Drones for Ukraine,,200.0
+2024-06-12 11:40:12+00:00,Lyudmyla,Arlington,USD,General,,50.47
+2024-06-13 10:59:40+00:00,Ed,Washington,USD,General,,25.24
+2024-06-13 11:38:27+00:00,Kseniia,Ashland ,USD,General,,50.47
+2024-06-13 11:42:18+00:00,Polina,London,USD,General,,47.76
+2024-06-15 00:15:28+00:00,Luna,Falls Church,USD,,Best wishes from the USA.  ,48.51
+2024-06-15 04:51:17+00:00,Andriy,Vigo,USD,Victory Drones,,29.53
+2024-06-15 11:14:30+00:00,Oleksiy,London,USD,General,na FPV,47.76
+2024-06-16 06:00:00+00:00,Володимир,Ромны,USD,Flight to Recovery,,2.95
+2024-06-16 10:53:58+00:00,Inna,Kępno,USD,General,,96.02
+2024-06-16 11:23:15+00:00,Ihor,Berlin,USD,General,,99.38
+2024-06-16 12:02:16+00:00,Sergej,Senden,USD,,,2.47
+2024-06-16 14:20:56+00:00,Nicola,,USD,1000 Drones for Ukraine,,9.16
+2024-06-17 08:16:31+00:00,Alexander,Little Falls,USD,1000 Drones for Ukraine,,48.51
+2024-06-17 10:17:28+00:00,Sven,Pärnumaa,USD,General,,47.76
+2024-06-17 11:02:00+00:00,Stanislav,Lake Ariel,USD,1000 Drones for Ukraine,,97.52
+2024-06-17 11:32:36+00:00,Natalia,Edinburgh,USD,Victory Drones,,2.97
+2024-06-17 16:35:31+00:00,Anastasiya,Chicago,USD,1000 Drones for Ukraine,,9.31
+2024-06-18 00:46:34+00:00,Mariana,Washington,USD,1000 Drones for Ukraine,,100.0
+2024-06-18 10:22:10+00:00,Olena,Søborg,USD,General,,19.69
+2024-06-18 10:53:44+00:00,Olga,Hamburg,USD,General,,47.76
+2024-06-18 11:48:53+00:00,Olexiy,Palm Harbor,USD,Victory Drones,,48.51
+2024-06-18 18:59:50+00:00,Olha,Karlsruhe,USD,General,,14.760000000000002
+2024-06-18 19:45:06+00:00,Bohdana,,USD,,Для ЗСУ,100.0
+2024-06-18 20:05:38+00:00,Valeriy,Giubiasco,USD,General,,98.46
+2024-06-18 20:28:55+00:00,Lidiia,New York,USD,General,,19.11
+2024-06-19 11:24:08+00:00,Vladyslava,Poznań,USD,General,,19.87
+2024-06-20 11:12:43+00:00,Michael,Short Hills,USD,General,,70.08
+2024-06-20 11:14:02+00:00,Platon,Kovalyn,USD,General,,9.16
+2024-06-21 10:25:48+00:00,Vira,Berkeley,USD,General,,68.12
+2024-06-21 10:44:48+00:00,Olha,Krakow,USD,General,,24.84
+2024-06-21 10:49:50+00:00,Anders,Årsta,USD,General,,23.63
+2024-06-21 11:08:46+00:00,Ruta,Laurel,USD,1000 Drones for Ukraine,,100.0
+2024-06-21 15:22:38+00:00,Solveig,Bolton,USD,Victory Drones,,49.23
+2024-06-21 15:22:59+00:00,Hannah,Newton,USD,Victory Drones,,50.0
+2024-06-21 16:22:42+00:00,Olga,Bristol,USD,,Люті Пташки �� ❤️�,234.01
+2024-06-22 11:04:55+00:00,Daryna,Limassol,USD,General,,19.87
+2024-06-23 10:50:27+00:00,Sixty1design,N.Vancouver,USD,General,,298.14
+2024-06-23 11:27:43+00:00,Oleksandra,Woosbridge,USD,General,,67.07
+2024-06-23 11:33:02+00:00,Diane,Edinburgh,USD,Victory Drones,,2.97
+2024-06-23 23:12:56+00:00,Khrystyna,Yonkers,USD,Victory Drones,Donation,50.0
+2024-06-24 00:56:26+00:00,Anatoliy,Lehi,USD,,,195.53
+2024-06-24 10:48:55+00:00,Plan-h-analytics,Gulf Breeze,USD,Flight to Recovery,,50.0
+2024-06-24 11:35:50+00:00,Valeriya,Düsseldorf,USD,General,,2.41
+2024-06-24 18:48:45+00:00,Luis,Berlin,USD,General,,19.69
+2024-06-25 05:27:03+00:00,Kim,Phoenix,USD,General,,30.0
+2024-06-25 14:09:39+00:00,Paypal,,USD,,PPGF JUN 2024 Payout,6490.1
+2024-06-25 16:26:04+00:00,Dmytro,Nashua,USD,1000 Drones for Ukraine,,1050.0
+2024-06-26 10:47:27+00:00,Nataliia,Honokaa,USD,General,,28.91
+2024-06-26 17:28:20+00:00,Railbandit,Redlands,USD,General,Donation/support for Ukraine.  ,48.51
+2024-06-26 18:02:21+00:00,,,USD,,,17000.0
+2024-06-26 19:59:05+00:00,Alexander,Little Falls,USD,1000 Drones for Ukraine,,48.51
+2024-06-26 20:42:45+00:00,John-david,Montréal,USD,General,,34.46
+2024-06-27 11:32:00+00:00,Olga,,USD,Victory Drones,,100.93
+2024-06-27 20:54:31+00:00,John,Denver,USD,General,May Ukraine always be free and prosperous.   The Ukrainians are examples to the world of fightng to defend liberty and dignity.  ,30.0
+2024-06-27 23:43:34+00:00,,,USD,,,17000.0
+2024-06-28 10:06:42+00:00,Eva,Berlin,USD,General,,9.93
+2024-06-28 10:24:31+00:00,Vladyslava,Bollendorf-Pont,USD,General,,9.84
+2024-06-28 10:30:33+00:00,Ruslan,Hilden,USD,General,,24.84
+2024-06-28 10:31:59+00:00,Andrei,Owings Mills,USD,General,,50.47
+2024-06-28 11:35:07+00:00,Oleksandra,Bloomington,USD,General,,100.0
+2024-06-28 11:41:09+00:00,Yevgen,Mannheim,USD,General,,4.960000000000001
+2024-06-28 11:44:32+00:00,Vira,Elmwood Park,USD,Victory Drones,,28.91
+2024-06-28 12:09:48+00:00,Vitalii,Mississauga,USD,General,,9.84
+2024-06-28 13:18:21+00:00,David,Horsham,USD,1000 Drones for Ukraine,,19.69
+2024-06-28 15:23:08+00:00,Mary,Long Island City,USD,1000 Drones for Ukraine,,979.61
+2024-06-28 18:21:31+00:00,Marta,New York,USD,Victory Drones,Thank-you for your incredible devotion to Ukraine,97.52
+2024-06-29 01:39:29+00:00,Oksana,Bloomfield,USD,Victory Drones,,146.52
+2024-06-29 02:12:04+00:00,Iurii,Montréal,USD,1000 Drones for Ukraine,,24.610000000000003
+2024-06-29 02:44:50+00:00,Adrienne,Phoenix,USD,General,,75.0
+2024-06-29 02:57:09+00:00,Andre,Dewey,USD,General,,77.92
+2024-06-29 03:13:37+00:00,Iryna,Gilbert,USD,General,,28.91
+2024-06-29 03:37:24+00:00,James,Tempe,USD,General,,10.0
+2024-06-29 03:54:09+00:00,Ginger,Phoenix,USD,General,,30.0
+2024-06-29 04:30:01+00:00,Melissa,Phoenix,USD,General,,30.0
+2024-06-29 04:46:59+00:00,Sierra,Casa Grande,USD,General,,19.11
+2024-06-29 05:42:06+00:00,Yelena,State College,USD,General,,50.0
+2024-06-29 06:09:49+00:00,Brian,Phoenix,USD,General,,80.0
+2024-06-29 07:20:34+00:00,Cheng,Longmont,USD,1000 Drones for Ukraine,,100.0
+2024-06-29 10:25:16+00:00,Mikhail,Homebush West,USD,General,,99.38
+2024-06-29 10:41:14+00:00,Francis,Mannheim,USD,1000 Drones for Ukraine,,98.46
+2024-06-29 18:02:21+00:00,Ihor,New York,USD,General,,489.56
+2024-06-29 19:17:22+00:00,Robert,New York,USD,1000 Drones for Ukraine,,195.53
+2024-06-29 20:24:29+00:00,Svitlana,Ewing,USD,General,,50.0
+2024-06-29 20:33:05+00:00,Oleksii,Biessenhofen,USD,General,Oleksii Siryi,9.84
+2024-06-29 21:27:06+00:00,Anastasia,Durham,USD,General,,4900.01
+2024-06-30 04:15:05+00:00,Zoya,Toronto,USD,General,,23.64
+2024-06-30 06:50:52+00:00,Constantin,,USD,Veteranius,,9.84
+2024-06-30 10:10:01+00:00,Юрий,Днепропетровск,USD,General,,5.3
+2024-06-30 10:14:33+00:00,Yana,El Cerrito,USD,General,,195.53
+2024-06-30 12:42:22+00:00,Green,Staten Island,USD,General,Thank you guys for what you are doing,146.52
+2024-06-30 12:51:57+00:00,Igor,Dresden,USD,General,,34.15
+2024-06-30 14:15:35+00:00,Oleg,Ripollet,USD,Victory Drones,,9.84
+2024-06-30 20:31:09+00:00,Dmytro,Springfield,USD,General,,489.56
+2024-07-01 10:58:24+00:00,Veronika,,USD,,,300.0
+2024-07-01 11:04:31+00:00,Tetiana,Mainz,USD,1000 Drones for Ukraine,,24.84
+2024-07-01 11:45:14+00:00,Oleksandra,Duisburg,USD,General,,19.69
+2024-07-01 21:44:04+00:00,Ellen,Somerville,USD,1000 Drones for Ukraine,,25.0
+2024-07-02 07:01:12+00:00,Kateryna,Weesp,USD,General,,49.23
+2024-07-02 10:27:35+00:00,Orest,West Bloomfield,USD,1000 Drones for Ukraine,,10.0
+2024-07-02 10:59:07+00:00,Yevgen,Mannheim,USD,General,,9.84
+2024-07-03 10:01:52+00:00,Olha,Krakow,USD,General,,29.81
+2024-07-03 11:13:55+00:00,Sarunas,Newington,USD,Victory Drones,,50.0
+2024-07-03 17:08:25+00:00,Arianne,,USD,Mobile Shower Laundry Units,,23.64
+2024-07-03 18:03:05+00:00,Olena,Langenselbold,USD,Victory Drones,,49.23
+2024-07-03 19:29:46+00:00,Andriy,Vigo,USD,Victory Drones,,59.08
+2024-07-04 07:45:29+00:00,Olha,Karlsruhe,USD,General,,19.69
+2024-07-04 10:03:54+00:00,Igor,Brooklyn,USD,General,,25.0
+2024-07-04 10:18:03+00:00,Mikhail,Homebush West,USD,Victory Drones,,99.38
+2024-07-04 10:52:42+00:00,Barry,Clontarf,USD,Flight to Recovery,"What a brilliant initiative, well done.   Слава Україні",73.83999999999999
+2024-07-04 11:03:38+00:00,Andrei,Owings Mills,USD,Flight to Recovery,,50.47
+2024-07-04 11:14:14+00:00,Mikhail,Homebush West,USD,Flight to Recovery,,99.38
+2024-07-04 12:17:45+00:00,Elina,,USD,General,,49.23
+2024-07-04 22:59:49+00:00,Stan,Santa Monica,USD,General,,24.01
+2024-07-05 03:20:31+00:00,Thomas,,USD,Mobile Shower Laundry Units,,48.51
+2024-07-05 10:05:41+00:00,Tom,Wells,USD,General,,14.21
+2024-07-05 10:51:25+00:00,Tetiana,Mariager,USD,,,18.81
+2024-07-05 11:24:35+00:00,Nataliya,Manalapan,USD,General,,102.53
+2024-07-05 16:31:57+00:00,Mario,Trevignano,USD,1000 Drones for Ukraine,,49.23
+2024-07-05 19:18:19+00:00,Vadym,Darmstadt,USD,General,На обладнення та потреби бійців,196.93
+2024-07-06 10:31:11+00:00,Margaryta,Jossgrund,USD,General,,4.34
+2024-07-06 11:16:00+00:00,Svitlana,Ewing,USD,General,,20.0
+2024-07-06 11:44:00+00:00,Michael,New York,USD,1000 Drones for Ukraine,,10.0
+2024-07-07 07:38:03+00:00,Daniel,Ucel,USD,1000 Drones for Ukraine,,98.46
+2024-07-07 11:17:43+00:00,Dmitry,Brunswick East,USD,General,,19.69
+2024-07-07 11:20:20+00:00,Julia,Bad Soden ,USD,General,,69.0
+2024-07-07 11:28:12+00:00,Anna,Vernon Hills,USD,General,,25.24
+2024-07-08 10:35:11+00:00,Roman,Kraków,USD,1000 Drones for Ukraine,,23.64
+2024-07-08 12:00:25+00:00,Yevgeniya,London,USD,General,,96.02
+2024-07-08 13:21:39+00:00,Lidiia,New York,USD,General,,19.11
+2024-07-08 14:34:53+00:00,Vladimir,Fort Worth,USD,General,,100.0
+2024-07-08 15:31:47+00:00,Yuriy,Anjou,USD,,,96.02
+2024-07-08 15:56:20+00:00,Guilherme,Clearwater,USD,Victory Drones,,48.51
+2024-07-08 18:50:33+00:00,Nataly,Mississauga,USD,General,,98.46
+2024-07-08 19:21:20+00:00,Olha,Karlsruhe,USD,General,,9.84
+2024-07-08 19:54:51+00:00,Volodymyr,Mississauga,USD,1000 Drones for Ukraine,,337.29
+2024-07-08 20:11:41+00:00,Juri,Brieselang,USD,1000 Drones for Ukraine,,49.23
+2024-07-08 21:34:29+00:00,Yana,No City Provided,USD,1000 Drones for Ukraine,,100.0
+2024-07-08 22:44:39+00:00,John,West Melbourne,USD,Victory Drones,,196.93
+2024-07-08 22:55:43+00:00,Al,Nashua,USD,1000 Drones for Ukraine,,150.0
+2024-07-08 23:40:20+00:00,Gregory,,USD,Mobile Shower Laundry Units,,244.53
+2024-07-08 23:54:03+00:00,Orest,Pittstown,USD,1000 Drones for Ukraine,,107.32
+2024-07-09 00:10:54+00:00,Craig,Mackinac Is,USD,1000 Drones for Ukraine,,100.0
+2024-07-09 00:30:33+00:00,Andriy,Philadelphia,USD,1000 Drones for Ukraine,,489.56
+2024-07-09 01:05:18+00:00,Fran,,USD,1000 Drones for Ukraine,,984.68
+2024-07-09 01:15:17+00:00,David,Berkeley,USD,General,,195.53
+2024-07-09 02:39:48+00:00,Olga,Wilmette,USD,General,,350.0
+2024-07-09 03:39:15+00:00,Ihor,New York,USD,1000 Drones for Ukraine,Towards 1000 drones,979.61
+2024-07-09 04:16:54+00:00,Stanislav,Lake Ariel,USD,1000 Drones for Ukraine,На помсту за Охматдит.  ,100.0
+2024-07-09 04:33:04+00:00,Volodymyr,Trumbull,USD,General,,100.0
+2024-07-09 07:44:39+00:00,Vita,Łódź,USD,General,,19.69
+2024-07-09 08:13:48+00:00,Anastasiia,Alexandria,USD,General,,50.0
+2024-07-09 10:38:54+00:00,Nataliia,Indialantic,USD,General,,100.0
+2024-07-09 11:39:35+00:00,Axel,Heikendorf,USD,1000 Drones for Ukraine,,19.69
+2024-07-09 11:43:35+00:00,Lyubomyr,Lausanne,USD,1000 Drones for Ukraine,,96.02
+2024-07-09 13:22:31+00:00,Paul,Hohentengen A.H.,USD,General,,47.76
+2024-07-09 13:54:35+00:00,Omelyan,Vilnius,USD,General,,49.23
+2024-07-09 16:00:05+00:00,Patricia,Dewey,USD,General,,50.0
+2024-07-09 20:54:59+00:00,Nadiya,Gentry,USD,General,,50.0
+2024-07-10 10:44:47+00:00,Greenwood,Wakefield,USD,General,,100.0
+2024-07-10 10:58:25+00:00,Sofiia,Marburg,USD,General,,29.81
+2024-07-10 11:46:49+00:00,Fetchrss,Mykolaiv,USD,General,,98.46
+2024-07-10 14:32:48+00:00,Sviatoslav,Vancouver,USD,1000 Drones for Ukraine,,964.61
+2024-07-10 16:22:39+00:00,David,Buckeye,USD,1000 Drones for Ukraine,,100.0
+2024-07-10 17:30:15+00:00,Maksim,Brooklyn,USD,General,,100.0
+2024-07-11 01:05:16+00:00,Svitlana,New York,USD,General,,24.01
+2024-07-11 05:22:13+00:00,Natalya,Adelaide,USD,General,From Ukrainian Women's Association in South Australia,1558.3200000000002
+2024-07-11 10:31:46+00:00,Kateryna,Antwerp ,USD,General,,96.02
+2024-07-11 10:40:16+00:00,Shippingline.org,Guadalajara,USD,General,,4.960000000000001
+2024-07-11 10:44:52+00:00,Viktoriia,Berlin,USD,General,,23.64
+2024-07-11 10:51:50+00:00,Denis,Pälkäne,USD,General,,47.76
+2024-07-11 11:08:29+00:00,Nataliia,Durham ,USD,General,,18.81
+2024-07-11 11:10:31+00:00,Maryna,Brooklyn,USD,General,,100.93
+2024-07-11 11:32:19+00:00,Vira,Berkeley,USD,General,,40.0
+2024-07-11 20:51:57+00:00,Edvīns,Rīga,USD,1000 Drones for Ukraine,,14.760000000000002
+2024-07-11 20:52:23+00:00,Geurt,Ijsselstein,USD,General,,24.610000000000003
+2024-07-11 21:05:05+00:00,Simon,Stockholm,USD,General,,49.23
+2024-07-11 21:41:24+00:00,Angela,Calgary,USD,1000 Drones for Ukraine,,19.69
+2024-07-11 22:55:30+00:00,Matthew,Salisbury,USD,General,slava ukraini.  ,200.0
+2024-07-12 01:41:37+00:00,Lydia,Wayne,USD,1000 Drones for Ukraine,На помсту ворогам,97.52
+2024-07-12 03:41:40+00:00,Theodore,Delray Beach,USD,General,,100.0
+2024-07-12 05:47:03+00:00,Alexander,Little Falls,USD,1000 Drones for Ukraine,for Andrej,48.51
+2024-07-12 10:59:53+00:00,Lyudmyla,Arlington,USD,General,,50.47
+2024-07-12 11:39:56+00:00,Christoph,Trondheim,USD,Victory Drones,,98.46
+2024-07-12 15:46:50+00:00,Olof,Stockholm,USD,1000 Drones for Ukraine,,24.610000000000003
+2024-07-12 21:15:18+00:00,Gene,Ronkonkoma,USD,Victory Drones,,5.0
+2024-07-13 04:48:36+00:00,Kyryl,Issaquah,USD,Victory Drones,,48.51
+2024-07-13 07:36:59+00:00,Iurii,Montréal,USD,General,,19.69
+2024-07-13 09:58:49+00:00,Dk,New York,USD,Flight to Recovery,,77.92
+2024-07-13 10:25:43+00:00,Ed,Washington,USD,General,,25.24
+2024-07-13 11:12:19+00:00,Kseniia,Ashland ,USD,General,,50.47
+2024-07-13 11:33:51+00:00,Martin,Palatine,USD,Flight to Recovery,Happy Birthday Luba!,97.52
+2024-07-13 11:41:52+00:00,Polina,London,USD,General,,47.76
+2024-07-13 11:43:07+00:00,Violetta,Kenai,USD,Flight to Recovery,,50.0
+2024-07-13 11:43:14+00:00,Olena,Orange,USD,Flight to Recovery,"Happy Birthday, Lyubo! Welcome to the 40+ club! :) It's awesome here and life will only be getting better -- trust me! :) Thank you for all that you do and for all that you ARE.   Hugs, Olena Lennon",97.52
+2024-07-13 12:14:24+00:00,Alexander,Buffalo Grove,USD,Flight to Recovery,З днем народження Люба!,97.52
+2024-07-13 12:18:37+00:00,Alex,Almere,USD,,На проект «Літай»,200.74
+2024-07-13 13:02:26+00:00,Bruce,,USD,Mobile Shower Laundry Units,,244.53
+2024-07-13 13:06:54+00:00,Alla,Arlington,USD,,"Happy Birthday, Lubo!",19.11
+2024-07-13 13:50:19+00:00,Halyna,Brooklyn,USD,Flight to Recovery,Happy Birthday Luba!,48.51
+2024-07-13 14:00:12+00:00,Natalia,Matawan,USD,Flight to Recovery,,97.52
+2024-07-13 15:10:18+00:00,Svitlana,Del Mar,USD,Flight to Recovery,,100.0
+2024-07-13 18:28:23+00:00,Yuriy,Bensalem,USD,General,,97.52
+2024-07-13 18:46:26+00:00,Yaroslava,Basking Ridge,USD,General,,38.71
+2024-07-13 19:24:41+00:00,Yuriy,Jersey City,USD,General,,15.0
+2024-07-13 19:38:18+00:00,Svitlana,Buford,USD,Flight to Recovery,,20.0
+2024-07-13 20:49:16+00:00,Yuliya,Wappingers Falls,USD,General,,9.31
+2024-07-13 20:52:27+00:00,Tatiana,Falls Church,USD,Victory Drones,,200.0
+2024-07-13 21:16:46+00:00,Tetyana,Little Rock,USD,General,,38.71
+2024-07-13 21:37:10+00:00,Nataliia,Hazlet,USD,General,,14.21
+2024-07-13 22:14:10+00:00,Beau,New Paltz,USD,General,,38.71
+2024-07-13 22:50:10+00:00,Natalia,Washington,USD,Flight to Recovery,"Mnohaya Lita, Lyuba!",102.58
+2024-07-13 23:00:15+00:00,Oksana,Adeje,USD,General,,49.23
+2024-07-13 23:32:06+00:00,James,Centreville,USD,General,,100.0
+2024-07-14 00:26:23+00:00,,,USD,,,1000.0
+2024-07-14 00:27:53+00:00,,,USD,,,97.0
+2024-07-14 01:22:17+00:00,Oleksii,Toronto,USD,Flight to Recovery,,18.81
+2024-07-14 06:57:43+00:00,Psylligent,,USD,,Become the best at UAV in the world,30.96
+2024-07-14 07:42:14+00:00,Mykhailo,Le Havre,USD,,,200.74
+2024-07-14 12:12:26+00:00,Nadiya,Jersey City,USD,Flight to Recovery,"Happy Birthday, Lyubo!",50.0
+2024-07-14 12:44:54+00:00,Oleksandra,Bonita Springs,USD,Flight to Recovery,,100.0
+2024-07-14 18:34:57+00:00,Kevin,Salisbury,USD,General,,19.69
+2024-07-14 22:30:37+00:00,Laryssa,Astoria,USD,Flight to Recovery,,20.0
+2024-07-15 08:15:28+00:00,William,Blairhall,USD,1000 Drones for Ukraine,,19.69
+2024-07-15 09:01:29+00:00,Alexandru,Chisinau,USD,General,,24.610000000000003
+2024-07-15 09:03:26+00:00,Roman,Koszalin,USD,General,,98.46
+2024-07-15 09:44:40+00:00,Eduard,Arad,USD,General,,98.46
+2024-07-15 11:17:51+00:00,Alex's,Newmarket,USD,General,,500.0
+2024-07-15 14:02:55+00:00,Patrick,,USD,Mobile Shower Laundry Units,,97.52
+2024-07-15 17:12:10+00:00,Natalia,Burnaby,USD,General,"from Vancouver, Canada, with love.   Hope russia loses soon!",29.53
+2024-07-15 18:51:51+00:00,,,USD,,,39000.0
+2024-07-15 19:32:17+00:00,Weiping,Emeryville,USD,General,,100.0
+2024-07-15 20:04:34+00:00,Nina,Oberursel,USD,General,Slava Ukraine!,49.23
+2024-07-16 00:47:36+00:00,Valentyn,New York,USD,General,,391.55
+2024-07-16 01:40:24+00:00,Valentyn,New York,USD,General,,97.52
+2024-07-16 05:57:14+00:00,Sergej,Buffalo Grove,USD,Flight to Recovery,,47.76
+2024-07-16 10:21:53+00:00,Ihor,Berlin,USD,General,,99.38
+2024-07-16 11:22:41+00:00,Inna,Kępno,USD,General,,96.02
+2024-07-16 17:36:50+00:00,Mark,Hitchin,USD,General,,19.69
+2024-07-16 20:03:55+00:00,James,Fairfax,USD,General,,97.52
+2024-07-17 06:09:36+00:00,Andriy,Prague,USD,General,ЛЮТІ ПТАШКИ,78.76
+2024-07-17 10:06:20+00:00,Stanislav,Lake Ariel,USD,1000 Drones for Ukraine,,97.52
+2024-07-17 10:08:32+00:00,Kateryna,Fairfax,USD,Flight to Recovery,,100.0
+2024-07-17 10:08:41+00:00,Natalia,Edinburgh,USD,Victory Drones,,2.97
+2024-07-17 10:47:43+00:00,Sven,Pärnumaa,USD,General,,47.76
+2024-07-17 12:13:19+00:00,Reiner,Berlin,USD,Victory Drones,,192.53
+2024-07-17 13:50:38+00:00,Nadiya,Kuettigen,USD,General,,49.23
+2024-07-17 18:33:29+00:00,Sid,Bellingham,USD,General,,100.0
+2024-07-18 05:29:40+00:00,Gregory,Ryfoss,USD,General,,98.46000000000001
+2024-07-18 10:33:01+00:00,Olga,Hamburg,USD,General,,47.76
+2024-07-18 10:36:30+00:00,Olena,Søborg,USD,General,,19.69
+2024-07-18 20:45:28+00:00,Anastasiia,Kyiv,USD,1000 Drones for Ukraine,,9.16
+2024-07-18 20:46:38+00:00,Andrei,Brooklyn,USD,General,,195.53
+2024-07-18 21:11:02+00:00,Nikolay,Brooklyn,USD,Victory Drones,,100.0
+2024-07-18 22:55:18+00:00,Gabriel,San Juan,USD,Victory Drones,,150.0
+2024-07-19 12:36:33+00:00,Vladyslava,Poznań,USD,General,,19.87
+2024-07-19 15:24:01+00:00,Andrey,Jenkintown,USD,Victory Drones,,150.0
+2024-07-19 21:01:15+00:00,Pavlo,New York,USD,1000 Drones for Ukraine,,685.58
+2024-07-20 02:10:37+00:00,Maryna,Downers Grove,USD,1000 Drones for Ukraine,,146.52
+2024-07-20 10:16:29+00:00,Michael,Short Hills,USD,General,,70.08
+2024-07-20 11:22:27+00:00,Platon,Kovalyn,USD,General,,9.16
+2024-07-20 19:19:01+00:00,Alan,Elmhurst,USD,1000 Drones for Ukraine,,50.0
+2024-07-20 23:19:37+00:00,Theodore,Delray Beach,USD,1000 Drones for Ukraine,,100.0
+2024-07-21 10:24:39+00:00,Olha,Krakow,USD,General,,24.84
+2024-07-21 10:36:31+00:00,Vira,Berkeley,USD,General,,68.12
+2024-07-21 11:27:43+00:00,Anders,Årsta,USD,General,,23.63
+2024-07-21 23:44:03+00:00,Railbandit,Redlands,USD,General,,48.51
+2024-07-22 10:33:17+00:00,Daryna,Limassol,USD,General,,19.87
+2024-07-23 10:39:16+00:00,Oleksandra,Woosbridge,USD,General,,67.07
+2024-07-23 11:24:37+00:00,Diane,Edinburgh,USD,Victory Drones,,2.9699999999999998
+2024-07-23 11:34:54+00:00,Sixty1design,N.Vancouver,USD,General,,298.14
+2024-07-24 01:08:14+00:00,Paypal,,USD,,2000385860,1985.81
+2024-07-24 10:19:19+00:00,Valeriya,Düsseldorf,USD,General,,2.41
+2024-07-24 10:27:59+00:00,Plan-h-analytics,Gulf Breeze,USD,Flight to Recovery,,50.0
+2024-07-25 01:22:30+00:00,Robert,Scottsdale,USD,General,,50.0
+2024-07-25 17:05:55+00:00,Ganna,Zwaag,USD,Victory Drones,,25.57
+2024-07-25 22:22:53+00:00,Volodymyr,Krakow,USD,General,,34.46
+2024-07-26 11:30:52+00:00,Nataliia,Honokaa,USD,General,,28.91
+2024-07-26 11:34:46+00:00,Sven,,USD,General,,20.95
+2024-07-26 13:37:44+00:00,Mariya,Cold Spring,USD,General,,60.0
+2024-07-26 18:20:58+00:00,Bohdana,,USD,,Для ЗСУ,100.0
+2024-07-27 11:40:30+00:00,Olga,,USD,Victory Drones,,100.93
+2024-07-27 11:44:54+00:00,Oleg,Ripollet,USD,Victory Drones,,4.91
+2024-07-27 21:24:12+00:00,Robert,New York,USD,1000 Drones for Ukraine,,195.53
+2024-07-28 01:54:44+00:00,Alexander,Little Falls,USD,1000 Drones for Ukraine,,146.52
+2024-07-28 10:03:11+00:00,Eva,Berlin,USD,General,,9.930000000000001
+2024-07-28 10:16:29+00:00,Vladyslava,Bollendorf-Pont,USD,General,,9.84
+2024-07-28 10:40:35+00:00,Ruslan,Hilden,USD,General,,24.84
+2024-07-28 10:51:18+00:00,Vira,Elmwood Park,USD,Victory Drones,,28.91
+2024-07-28 11:01:52+00:00,Andrei,Owings Mills,USD,General,,50.47
+2024-07-28 11:14:45+00:00,Vitalii,Mississauga,USD,General,,9.84
+2024-07-28 11:32:55+00:00,Yevgen,Mannheim,USD,General,,4.960000000000001
+2024-07-28 16:50:44+00:00,James,Eugene,USD,General,,97.52
+2024-07-29 01:34:39+00:00,Anatoliy,Lehi,USD,,"Dron, REB",489.56
+2024-07-29 02:45:13+00:00,Olha,Anchorage ,USD,General,,18.81
+2024-07-29 10:18:11+00:00,Mikhail,Homebush West,USD,General,,99.38000000000001
+2024-07-29 11:16:36+00:00,Svitlana,Ewing,USD,General,,50.0
+2024-07-29 11:20:14+00:00,Oleksandra,Uetze,USD,Victory Drones,,98.46000000000001
+2024-07-29 11:45:28+00:00,Lidiia,New York,USD,General,,4.41
+2024-07-29 11:45:36+00:00,Francis,Mannheim,USD,1000 Drones for Ukraine,,98.46000000000001
+2024-07-29 19:39:19+00:00,Irina,Wedel,USD,General,,19.69
+2024-07-29 20:02:50+00:00,Oleksii,Biessenhofen,USD,General,,4.91
+2024-07-29 20:48:51+00:00,,,USD,,,8000.0
+2024-07-29 23:19:06+00:00,Esther,,USD,Mobile Shower Laundry Units,,48.51
+2024-07-30 10:58:42+00:00,Юрий,Днепропетровск,USD,General,,5.3
+2024-07-30 13:44:59+00:00,Oleg,Flower Mound,USD,General,,25.0
+2024-07-30 13:55:21+00:00,Lidiia,New York,USD,General,,4.41
+2024-07-30 17:51:41+00:00,Esther,Bethesda,USD,Victory Drones,,48.51
+2024-07-30 17:52:21+00:00,Esther,,USD,Mobile Shower Laundry Units,,48.51
+2024-07-31 02:08:49+00:00,Svetlana,Snellville,USD,General,,30.0
+2024-07-31 11:00:58+00:00,Yana,El Cerrito,USD,General,,195.53
+2024-07-31 12:26:41+00:00,Lidiia,New York,USD,General,,4.41
+2024-07-31 16:56:51+00:00,Cheng,Longmont,USD,General,,100.0
+2024-07-31 20:31:16+00:00,Oleksii,Biessenhofen,USD,General,,4.91
+2024-07-31 23:24:27+00:00,Jeffrey,Antioch,USD,General,,50.0
+2024-08-01 00:09:37+00:00,Peter,,USD,Mobile Shower Laundry Units,,97.52
+2024-08-01 01:57:11+00:00,Iurii,Montreal,USD,General,,19.69
+2024-08-01 08:15:46+00:00,Alonso,Madrid,USD,1000 Drones for Ukraine,,482.49
+2024-08-01 11:01:52+00:00,Oleksandra,Duisburg,USD,General,,19.69
+2024-08-01 11:34:07+00:00,Tetiana,Mainz,USD,1000 Drones for Ukraine,,24.84
+2024-08-01 12:55:10+00:00,Lidiia,New York,USD,General,,4.41
+2024-08-01 18:40:10+00:00,Troels,Palo Alto,USD,General,Reimbursement of documented expenses in relation to Maria Berlinska's participation in the 2024 Cyber and Tech Retreat,2329.86
+2024-08-01 21:04:16+00:00,Yelena,State College,USD,General,,100.0
+2024-08-01 21:40:46+00:00,Kenneth,Northfield,USD,General,,50.0
+2024-08-02 10:22:16+00:00,Yevgen,Mannheim,USD,General,,9.84
+2024-08-02 11:38:22+00:00,Orest,West Bloomfield,USD,1000 Drones for Ukraine,,10.0
+2024-08-02 13:44:02+00:00,Lidiia,New York,USD,General,,4.41
+2024-08-02 14:56:39+00:00,Nadiya,Gentry,USD,General,,50.0
+2024-08-02 16:46:31+00:00,Railbandit,Redlands,USD,General,,48.51
+2024-08-02 18:49:17+00:00,Ruslan,Durham ,USD,General,,293.54
+2024-08-02 20:27:42+00:00,Olena,London,USD,General,,96.02
+2024-08-02 21:16:58+00:00,Iryna,Galena,USD,General,,97.52
+2024-08-02 22:15:05+00:00,Esther,,USD,ONTHEFLY,,24.01
+2024-08-03 00:26:51+00:00,Kateryna,London ,USD,General,,9.16
+2024-08-03 05:43:30+00:00,Dmitry,Fort Lee,USD,General,Glory to Ukraine!,15.0
+2024-08-03 08:19:36+00:00,Anna,Berlin,USD,General,Thank you for your continuous work for Ukraine's Victory ✌️��,71.89
+2024-08-03 09:37:57+00:00,Igor,Dresden,USD,General,,13.99
+2024-08-03 10:23:11+00:00,Sarunas,Newington,USD,Victory Drones,,50.0
+2024-08-03 10:42:19+00:00,Olha,Krakow,USD,General,,29.81
+2024-08-03 11:09:53+00:00,Constantin,Capriate San Gervasio,USD,Flight to Recovery,,14.760000000000002
+2024-08-03 11:29:00+00:00,Massimiliano,Doncaster,USD,General,,118.16
+2024-08-03 16:27:39+00:00,Oleksiy,London,USD,General,na drony,23.64
+2024-08-03 19:02:38+00:00,Esther,,USD,Mobile Shower Laundry Units,,9.31
+2024-08-03 19:48:57+00:00,Yuriy,Saratoga,USD,Victory Drones,For education in drone tech,100.0
+2024-08-03 21:16:19+00:00,Vladimir,Fort Worth,USD,General,,100.0
+2024-08-03 22:55:38+00:00,Lidiia,New York,USD,General,,4.41
+2024-08-03 23:08:33+00:00,Katharine,San Diego,USD,General,For mobile showers,15.0
+2024-08-03 23:27:05+00:00,Gabriel,,USD,ONTHEFLY,,100.0
+2024-08-04 10:02:50+00:00,Elina,,USD,General,,49.230000000000004
+2024-08-04 10:11:01+00:00,Igor,Brooklyn,USD,General,,25.0
+2024-08-04 10:22:56+00:00,Fedor,Treviso,USD,General,,14.760000000000002
+2024-08-04 10:28:43+00:00,Andrei,Owings Mills,USD,Flight to Recovery,,50.47
+2024-08-04 10:31:06+00:00,Mikhail,Homebush West,USD,Flight to Recovery,,99.38000000000001
+2024-08-04 10:57:49+00:00,Yuliya,Salzburg,USD,General,,98.46000000000001
+2024-08-04 11:41:30+00:00,Mikhail,Homebush West,USD,Victory Drones,,99.38000000000001
+2024-08-04 13:06:29+00:00,Jonathan,Brooklyn,USD,Victory Drones,,24.01
+2024-08-04 13:59:23+00:00,Halyna,,USD,Veteranius,,47.76
+2024-08-04 14:15:30+00:00,Halyna,,USD,Mobile Shower Laundry Units,,47.76
+2024-08-04 16:20:38+00:00,Andriy,,USD,ONTHEFLY,,200.0
+2024-08-04 19:10:33+00:00,Iryna,Kalamazoo,USD,General,,300.0
+2024-08-04 19:30:46+00:00,Theodore,Delray Beach,USD,1000 Drones for Ukraine,,100.0
+2024-08-04 22:09:56+00:00,Anna,Vienna,USD,General,,192.53
+2024-08-04 22:38:54+00:00,James,Centreville,USD,1000 Drones for Ukraine,,100.0
+2024-08-05 00:59:02+00:00,Ihor,New York,USD,General,,979.61
+2024-08-05 02:15:09+00:00,Orest,,USD,ONTHEFLY,,50.0
+2024-08-05 06:16:14+00:00,Olha,Karlsruhe,USD,General,,19.69
+2024-08-05 09:58:26+00:00,Bohdan,,USD,ONTHEFLY,,47.76
+2024-08-05 10:49:37+00:00,Tom,Wells,USD,General,,14.21
+2024-08-05 11:19:00+00:00,Nataliya,Manalapan,USD,General,,102.53
+2024-08-05 20:24:45+00:00,Artem,Vancouver,USD,Victory Drones,,98.46000000000001
+2024-08-06 03:35:23+00:00,Anna,Brooklyn,USD,General,,50.0
+2024-08-06 04:05:30+00:00,Halyna,Brooklyn,USD,General,,783.59
+2024-08-06 04:49:44+00:00,Oleg,Ripollet,USD,Victory Drones,,10.61
+2024-08-06 05:51:43+00:00,Tetiana,Żory,USD,General,,9.84
+2024-08-06 10:03:13+00:00,Svitlana,Ewing,USD,General,,20.0
+2024-08-06 10:33:23+00:00,Margaryta,Jossgrund,USD,General,,4.34
+2024-08-06 10:44:34+00:00,Michael,New York,USD,1000 Drones for Ukraine,,10.0
+2024-08-06 18:06:51+00:00,Yevhen,Walnut Creek,USD,General,,50.0
+2024-08-07 01:36:27+00:00,Iurii,Montreal,USD,General,,24.610000000000003
+2024-08-07 10:26:10+00:00,Vadym,Darmstadt,USD,General,,196.93
+2024-08-07 10:34:32+00:00,Julia,Bad Soden ,USD,General,,69.0
+2024-08-07 10:49:43+00:00,Anna,Vernon Hills,USD,General,,25.24
+2024-08-07 10:52:45+00:00,Yana,Neuvecelle,USD,General,,98.46000000000001
+2024-08-07 10:58:53+00:00,Oleksandra,Bloomington,USD,General,,100.0
+2024-08-07 11:09:19+00:00,Dmitry,Brunswick East,USD,General,,19.69
+2024-08-07 14:48:13+00:00,Vladimir,Wilmette,USD,General,,48.51
+2024-08-07 19:57:57+00:00,Kateryna,Weesp,USD,General,,73.83999999999999
+2024-08-07 23:28:38+00:00,Lidiia,New York,USD,General,,24.01
+2024-08-08 09:54:53+00:00,Lesya,Little Falls,USD,1000 Drones for Ukraine,,47.76
+2024-08-08 11:14:01+00:00,Roman,Kraków,USD,1000 Drones for Ukraine,,23.64
+2024-08-08 13:00:32+00:00,Lidiia,New York,USD,General,,4.41
+2024-08-08 15:21:12+00:00,Esther,Bethesda,USD,Victory Drones,,14.21
+2024-08-08 15:25:20+00:00,Esther,,USD,ONTHEFLY,,9.31
+2024-08-08 20:25:06+00:00,John-david,Montréal,USD,1000 Drones for Ukraine,,34.46
+2024-08-09 00:48:29+00:00,Oksana,Bloomfield,USD,General,,200.0
+2024-08-09 10:50:24+00:00,Nataliia,Indialantic,USD,General,,100.0
+2024-08-09 11:15:13+00:00,Axel,Heikendorf,USD,1000 Drones for Ukraine,,19.69
+2024-08-09 13:27:46+00:00,Yevgeniya,London,USD,General,For drones,96.02
+2024-08-09 15:35:05+00:00,Cheryl,Wendell,USD,General,,35.0
+2024-08-09 15:35:08+00:00,Esther,,USD,Mobile Shower Laundry Units,,24.01
+2024-08-09 20:17:51+00:00,Liubov,Chapel Hill,USD,General,,9.31
+2024-08-09 20:56:40+00:00,Angelina,,USD,ONTHEFLY,for video transmitters,98.46000000000001
+2024-08-09 21:57:46+00:00,George,Jackson,USD,1000 Drones for Ukraine,,2000.0
+2024-08-09 22:03:56+00:00,Alina,,USD,ONTHEFLY,,47.76
+2024-08-09 22:08:02+00:00,James,Centreville,USD,1000 Drones for Ukraine,,100.0

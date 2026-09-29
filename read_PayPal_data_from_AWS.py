@@ -18,8 +18,7 @@ def format_money_USD(value):
 
 
 def read_PayPal_txs(start_date):
-    '''Read only the new PayPal transactions from AWS'''
-
+    """Read new PayPal transactions from AWS."""
     access_key_id = os.environ.get('AWS_ACCESS_KEY_ID')
     secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')
 
@@ -36,75 +35,88 @@ def read_PayPal_txs(start_date):
         print('AWS credentials not configured; using the local CSV snapshot.')
         return pd.DataFrame()
 
-    s3 = boto3.client('s3', aws_access_key_id=access_key_id,
-                            aws_secret_access_key=secret_access_key,
-                            region_name='us-east-1')
-
+    bucket_name = 'finmap-trans'
     objects = []
     continuation_token = None
-    bucket_name = 'finmap-trans'
 
     try:
+        s3 = boto3.client(
+            's3',
+            aws_access_key_id=access_key_id,
+            aws_secret_access_key=secret_access_key,
+            region_name='us-east-1',
+        )
+
         while True:
             if continuation_token:
-                response = s3.list_objects_v2(Bucket=bucket_name, ContinuationToken=continuation_token)
+                response = s3.list_objects_v2(
+                    Bucket=bucket_name,
+                    ContinuationToken=continuation_token,
+                )
             else:
                 response = s3.list_objects_v2(Bucket=bucket_name)
 
-            if 'Contents' in response:
-                objects.extend(response['Contents'])
+            objects.extend(response.get('Contents', []))
 
-            if response.get('IsTruncated'):
-                continuation_token = response.get('NextContinuationToken')
-            else:
+            if not response.get('IsTruncated'):
                 break
+            continuation_token = response.get('NextContinuationToken')
+
     except (NoCredentialsError, ClientError) as exc:
         print(f'Could not access S3 bucket {bucket_name!r}: {exc}. Using the local CSV snapshot.')
         return pd.DataFrame()
 
     transactions = []
+    decoder = json.JSONDecoder()
 
     for obj in objects:
+        key = obj.get('Key', '')
+        if 'trans-paypal' not in key:
+            continue
 
-        if 'trans-paypal' in obj['Key']:
-            # Extract the date from the object key
-            obj_date_str = '-'.join(obj['Key'].split('-')[2:5]).split('.')[0]
+        try:
+            obj_date_str = '-'.join(key.split('-')[2:5]).split('.')[0]
             obj_date = datetime.strptime(obj_date_str, '%Y-%m-%d')
+        except ValueError:
+            continue
 
-            if obj_date > start_date:
+        if obj_date <= start_date:
+            continue
 
-                try:
-                    file = s3.get_object(Bucket='finmap-trans', Key=obj['Key'])
-                    file_content = file['Body'].read().decode('utf-8')
-                except (NoCredentialsError, ClientError) as exc:
-                    print(f"Could not read S3 object {obj['Key']}: {exc}. Skipping it.")
-                    continue
+        try:
+            file = s3.get_object(Bucket=bucket_name, Key=key)
+            file_content = file['Body'].read().decode('utf-8')
+        except (NoCredentialsError, ClientError) as exc:
+            print(f'Could not read S3 object {key}: {exc}. Skipping it.')
+            continue
 
-                while file_content:
-                    json_content, idx = json.JSONDecoder().raw_decode(file_content)
-                    file_content = file_content[idx:].lstrip()
+        while file_content:
+            try:
+                json_content, consumed = decoder.raw_decode(file_content)
+            except ValueError:
+                break
 
-                for item in json_content:
-                    transaction_info = item.get('transaction_info', {})
-                    payer_info = item.get('payer_info', {})
-                    payer_name = payer_info.get('payer_name', {})
-                    shipping_info = item.get('shipping_info', {})
-                    address = shipping_info.get('address', {})
-                    transaction_note = transaction_info.get('transaction_note', '')
+            file_content = file_content[consumed:].lstrip()
+            if not isinstance(json_content, list):
+                continue
 
-                    transaction_data = {
-                        'Date': transaction_info.get('transaction_initiation_date'),
-                        'FullName': payer_name.get('alternate_full_name'),
-                        'City': address.get('city'),
-                        'Currency': transaction_info.get('transaction_amount', {}).get('currency_code'),
-                        'Gross': transaction_info.get('transaction_amount', {}).get('value'),
-                        'Fee': transaction_info.get('fee_amount', {}).get('value'),
-                        'Category': transaction_info.get('transaction_subject'),
-                        'TransactionNote': transaction_note
-                    }
-                    transactions.append(transaction_data)
+            for item in json_content:
+                transaction_info = item.get('transaction_info', {})
+                payer_info = item.get('payer_info', {})
+                payer_name = payer_info.get('payer_name', {})
+                shipping_info = item.get('shipping_info', {})
+                address = shipping_info.get('address', {})
 
-    print("obj_date", obj_date)
+                transactions.append({
+                    'Date': transaction_info.get('transaction_initiation_date'),
+                    'FullName': payer_name.get('alternate_full_name'),
+                    'City': address.get('city'),
+                    'Currency': transaction_info.get('transaction_amount', {}).get('currency_code'),
+                    'Gross': transaction_info.get('transaction_amount', {}).get('value'),
+                    'Fee': transaction_info.get('fee_amount', {}).get('value'),
+                    'Category': transaction_info.get('transaction_subject'),
+                    'TransactionNote': transaction_info.get('transaction_note', ''),
+                })
 
     return pd.DataFrame(transactions)
 

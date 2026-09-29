@@ -67,7 +67,7 @@ def show_donations_by_category(donations_by_category):
     with col0:
         over_below_all = st.selectbox(' ',['all donations', 'over $2,500', 'below $2,500'])
     with col3:
-        period = st.selectbox(' ', ['Year', 'Quarter', 'Month', 'Week', 'Day', 'All time'])
+        period = st.selectbox(' ', ['All time', 'Year', 'Quarter', 'Month', 'Week', 'Day'])
 
 
     donations_by_category['Date'] = pd.to_datetime(donations_by_category['Date'])
